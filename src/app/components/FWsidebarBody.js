@@ -51,8 +51,8 @@ export default function FWsidebarBody() {
         </SidebarItem>
       </SidebarSection>
       <SidebarSection className="max-lg:hidden">
-        <SidebarHeading>Upcoming Events</SidebarHeading>
-        <SidebarItem href="/events/1">Bear Hug: Live in Concert</SidebarItem>
+        <SidebarHeading>Notifications</SidebarHeading>
+        <SidebarItem href="/events/1">X181 PAJ - ticket</SidebarItem>
         <SidebarItem href="/events/2">Viking People</SidebarItem>
         <SidebarItem href="/events/3">Six Fingers — DJ Set</SidebarItem>
         <SidebarItem href="/events/4">We All Look The Same</SidebarItem>

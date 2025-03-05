@@ -21,7 +21,7 @@ export default function Page() {
             <a
               class="inline-flex items-center gap-2 text-sm/6 text-zinc-500 dark:text-zinc-400"
               data-headlessui-state=""
-              href="/orders"
+              href="/tickets"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -37,16 +37,16 @@ export default function Page() {
                   clip-rule="evenodd"
                 ></path>
               </svg>
-              Orders
+              Tickets
             </a>
           </div>
           <div class="mt-4 lg:mt-8">
             <div class="flex items-center gap-4">
               <h1 class="text-2xl/8 font-semibold text-zinc-950 sm:text-xl/8 dark:text-white">
-                Order #3000
+                Ticket 3000
               </h1>
               <span class="inline-flex items-center gap-x-1.5 rounded-md px-1.5 py-0.5 text-sm/5 font-medium sm:text-xs/5 forced-colors:outline bg-lime-400/20 text-lime-700 group-data-hover:bg-lime-400/30 dark:bg-lime-400/10 dark:text-lime-300 dark:group-data-hover:bg-lime-400/15">
-                Successful
+                Paid
               </span>
             </div>
             <div class="isolate mt-2.5 flex flex-wrap justify-between gap-x-6 gap-y-4">
@@ -67,7 +67,7 @@ export default function Page() {
                     ></path>
                     <path d="M13 11.75a.75.75 0 0 0-1.5 0v.179c0 .15-.138.28-.306.255A65.277 65.277 0 0 0 1.75 11.5a.75.75 0 0 0 0 1.5c3.135 0 6.215.228 9.227.668A1.764 1.764 0 0 0 13 11.928v-.178Z"></path>
                   </svg>
-                  <span>US$80.00</span>
+                  <span>£80.00</span>
                 </span>
                 <span class="flex items-center gap-3 text-base/6 text-zinc-950 sm:text-sm/6 dark:text-white">
                   <svg
@@ -113,6 +113,7 @@ export default function Page() {
               <div class="flex gap-4">
                 <button
                   type="button"
+                //   onClick={() => alert('Refund')}
                   class="relative isolate inline-flex items-baseline justify-center gap-x-2 rounded-lg border text-base/6 font-semibold px-[calc(--spacing(3.5)-1px)] py-[calc(--spacing(2.5)-1px)] sm:px-[calc(--spacing(3)-1px)] sm:py-[calc(--spacing(1.5)-1px)] sm:text-sm/6 focus:outline-hidden data-focus:outline data-focus:outline-2 data-focus:outline-offset-2 data-focus:outline-blue-500 data-disabled:opacity-50 *:data-[slot=icon]:-mx-0.5 *:data-[slot=icon]:my-0.5 *:data-[slot=icon]:size-5 *:data-[slot=icon]:shrink-0 *:data-[slot=icon]:self-center *:data-[slot=icon]:text-(--btn-icon) sm:*:data-[slot=icon]:my-1 sm:*:data-[slot=icon]:size-4 forced-colors:[--btn-icon:ButtonText] forced-colors:data-hover:[--btn-icon:ButtonText] border-zinc-950/10 text-zinc-950 data-active:bg-zinc-950/[2.5%] data-hover:bg-zinc-950/[2.5%] dark:border-white/15 dark:text-white dark:[--btn-bg:transparent] dark:data-active:bg-white/5 dark:data-hover:bg-white/5 [--btn-icon:var(--color-zinc-500)] data-active:[--btn-icon:var(--color-zinc-700)] data-hover:[--btn-icon:var(--color-zinc-700)] dark:data-active:[--btn-icon:var(--color-zinc-400)] dark:data-hover:[--btn-icon:var(--color-zinc-400)] cursor-default"
                   data-headlessui-state=""
                 >
@@ -120,7 +121,7 @@ export default function Page() {
                     class="absolute top-1/2 left-1/2 size-[max(100%,2.75rem)] -translate-x-1/2 -translate-y-1/2 [@media(pointer:fine)]:hidden"
                     aria-hidden="true"
                   ></span>
-                  Refund
+                  Appeal
                 </button>
                 <button
                   class="relative isolate inline-flex items-baseline justify-center gap-x-2 rounded-lg border text-base/6 font-semibold px-[calc(--spacing(3.5)-1px)] py-[calc(--spacing(2.5)-1px)] sm:px-[calc(--spacing(3)-1px)] sm:py-[calc(--spacing(1.5)-1px)] sm:text-sm/6 focus:outline-hidden data-focus:outline data-focus:outline-2 data-focus:outline-offset-2 data-focus:outline-blue-500 data-disabled:opacity-50 *:data-[slot=icon]:-mx-0.5 *:data-[slot=icon]:my-0.5 *:data-[slot=icon]:size-5 *:data-[slot=icon]:shrink-0 *:data-[slot=icon]:self-center *:data-[slot=icon]:text-(--btn-icon) sm:*:data-[slot=icon]:my-1 sm:*:data-[slot=icon]:size-4 forced-colors:[--btn-icon:ButtonText] forced-colors:data-hover:[--btn-icon:ButtonText] border-transparent bg-(--btn-border) dark:bg-(--btn-bg) before:absolute before:inset-0 before:-z-10 before:rounded-[calc(var(--radius-lg)-1px)] before:bg-(--btn-bg) before:shadow-sm dark:before:hidden dark:border-white/5 after:absolute after:inset-0 after:-z-10 after:rounded-[calc(var(--radius-lg)-1px)] after:shadow-[shadow:inset_0_1px_--theme(--color-white/15%)] data-active:after:bg-(--btn-hover-overlay) data-hover:after:bg-(--btn-hover-overlay) dark:after:-inset-px dark:after:rounded-lg data-disabled:before:shadow-none data-disabled:after:shadow-none text-white [--btn-bg:var(--color-zinc-900)] [--btn-border:var(--color-zinc-950)]/90 [--btn-hover-overlay:var(--color-white)]/10 dark:text-white dark:[--btn-bg:var(--color-zinc-600)] dark:[--btn-hover-overlay:var(--color-white)]/5 [--btn-icon:var(--color-zinc-400)] data-active:[--btn-icon:var(--color-zinc-300)] data-hover:[--btn-icon:var(--color-zinc-300)] cursor-default"
@@ -131,7 +132,7 @@ export default function Page() {
                     class="absolute top-1/2 left-1/2 size-[max(100%,2.75rem)] -translate-x-1/2 -translate-y-1/2 [@media(pointer:fine)]:hidden"
                     aria-hidden="true"
                   ></span>
-                  Resend Invoice
+                  Action
                 </button>
               </div>
             </div>
@@ -146,13 +147,35 @@ export default function Page() {
             ></hr>
             <dl class="grid grid-cols-1 text-base/6 sm:grid-cols-[min(50%,--spacing(80))_auto] sm:text-sm/6">
               <dt class="col-start-1 border-t border-zinc-950/5 pt-3 text-zinc-500 first:border-none sm:border-t sm:border-zinc-950/5 sm:py-3 dark:border-white/5 dark:text-zinc-400 sm:dark:border-white/5">
-                Customer
+                Council
               </dt>
               <dd class="pt-1 pb-3 text-zinc-950 sm:border-t sm:border-zinc-950/5 sm:py-3 sm:nth-2:border-none dark:text-white dark:sm:border-white/5">
-                Leslie Alexander
+                Brent
               </dd>
               <dt class="col-start-1 border-t border-zinc-950/5 pt-3 text-zinc-500 first:border-none sm:border-t sm:border-zinc-950/5 sm:py-3 dark:border-white/5 dark:text-zinc-400 sm:dark:border-white/5">
-                Event
+                Vehicle
+              </dt>
+              <dd class="pt-1 pb-3 text-zinc-950 sm:border-t sm:border-zinc-950/5 sm:py-3 sm:nth-2:border-none dark:text-white dark:sm:border-white/5">
+                <a
+                  class="flex items-center gap-2"
+                  data-headlessui-state=""
+                  href="/events/1000"
+                >
+                  <span
+                    data-slot="avatar"
+                    class="size-6 inline-grid shrink-0 align-middle [--avatar-radius:20%] [--ring-opacity:20%] *:col-start-1 *:row-start-1 outline -outline-offset-1 outline-black/(--ring-opacity) dark:outline-white/(--ring-opacity) rounded-full *:rounded-full"
+                  >
+                    <img
+                      class="size-full"
+                      src="./mercedes.png"
+                      alt=""
+                    ></img>
+                  </span>
+                  <span>NA24 LAD</span>
+                </a>
+              </dd>
+              <dt class="col-start-1 border-t border-zinc-950/5 pt-3 text-zinc-500 first:border-none sm:border-t sm:border-zinc-950/5 sm:py-3 dark:border-white/5 dark:text-zinc-400 sm:dark:border-white/5">
+                Driver
               </dt>
               <dd class="pt-1 pb-3 text-zinc-950 sm:border-t sm:border-zinc-950/5 sm:py-3 sm:nth-2:border-none dark:text-white dark:sm:border-white/5">
                 <a
@@ -170,36 +193,33 @@ export default function Page() {
                       alt=""
                     ></img>
                   </span>
-                  <span>Bear Hug: Live in Concert</span>
+                  <span>Joff Black</span>
                 </a>
               </dd>
               <dt class="col-start-1 border-t border-zinc-950/5 pt-3 text-zinc-500 first:border-none sm:border-t sm:border-zinc-950/5 sm:py-3 dark:border-white/5 dark:text-zinc-400 sm:dark:border-white/5">
                 Amount
               </dt>
               <dd class="pt-1 pb-3 text-zinc-950 sm:border-t sm:border-zinc-950/5 sm:py-3 sm:nth-2:border-none dark:text-white dark:sm:border-white/5">
-                US$80.00
+                £80.00
               </dd>
               <dt class="col-start-1 border-t border-zinc-950/5 pt-3 text-zinc-500 first:border-none sm:border-t sm:border-zinc-950/5 sm:py-3 dark:border-white/5 dark:text-zinc-400 sm:dark:border-white/5">
-                Amount after exchange rate
+                Amount if not paid in 30 days
               </dt>
               <dd class="pt-1 pb-3 text-zinc-950 sm:border-t sm:border-zinc-950/5 sm:py-3 sm:nth-2:border-none dark:text-white dark:sm:border-white/5">
-                US$80.00 → CA$109.47
+                £80.00 → £160.00
               </dd>
               <dt class="col-start-1 border-t border-zinc-950/5 pt-3 text-zinc-500 first:border-none sm:border-t sm:border-zinc-950/5 sm:py-3 dark:border-white/5 dark:text-zinc-400 sm:dark:border-white/5">
-                Fee
+                Images
               </dt>
-              <dd class="pt-1 pb-3 text-zinc-950 sm:border-t sm:border-zinc-950/5 sm:py-3 sm:nth-2:border-none dark:text-white dark:sm:border-white/5">
-                CA$3.28
+              <dd class="flex flex-row pt-1 pb-3 text-zinc-950 sm:border-t sm:border-zinc-950/5 sm:py-3 sm:nth-2:border-none dark:text-white dark:sm:border-white/5">
+              <img class="aspect-3/2 rounded-lg shadow-sm w-70 h-50" src="/map.png" alt=""></img>
+              <img class="ml-2 aspect-3/2 rounded-lg shadow-sm w-50 h-50" src="/pcn.png" alt=""></img>
+              <img class="ml-2 aspect-3/2 rounded-lg shadow-sm w-50 h-50" src="/pcn.png" alt=""></img>
               </dd>
-              <dt class="col-start-1 border-t border-zinc-950/5 pt-3 text-zinc-500 first:border-none sm:border-t sm:border-zinc-950/5 sm:py-3 dark:border-white/5 dark:text-zinc-400 sm:dark:border-white/5">
-                Net
-              </dt>
-              <dd class="pt-1 pb-3 text-zinc-950 sm:border-t sm:border-zinc-950/5 sm:py-3 sm:nth-2:border-none dark:text-white dark:sm:border-white/5">
-                CA$106.19
-              </dd>
+     
             </dl>
           </div>
-          <div class="mt-12">
+          {/* <div class="mt-12">
             <h2 class="text-base/7 font-semibold text-zinc-950 sm:text-sm/6 dark:text-white">
               Payment method
             </h2>
@@ -267,7 +287,7 @@ export default function Page() {
                 </span>
               </dd>
             </dl>
-          </div>
+          </div> */}
         </div>
       </div>
     </SidebarLayout>
