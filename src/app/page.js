@@ -166,7 +166,7 @@ export default function Home() {
                     tabindex="0"
                     class="absolute inset-0 focus:outline-hidden"
                     data-headlessui-state=""
-                    href="/orders/3000"
+                    href="/ticket-details"
                   ></a>
                   3000
                 </td>
@@ -177,7 +177,7 @@ export default function Home() {
                     tabindex="-1"
                     class="absolute inset-0 focus:outline-hidden"
                     data-headlessui-state=""
-                    href="/orders/3000"
+                    href="/ticket-details"
                   ></a>
                   May 9, 2024
                 </td>
@@ -188,7 +188,7 @@ export default function Home() {
                     tabindex="-1"
                     class="absolute inset-0 focus:outline-hidden"
                     data-headlessui-state=""
-                    href="/orders/3000"
+                    href="/ticket-details"
                   ></a>
                   Ealing
                 </td>
@@ -199,7 +199,7 @@ export default function Home() {
                     tabindex="-1"
                     class="absolute inset-0 focus:outline-hidden"
                     data-headlessui-state=""
-                    href="/orders/3000"
+                    href="/ticket-details"
                   ></a>
                   <div class="flex items-center gap-2">
                     <span
@@ -218,7 +218,7 @@ export default function Home() {
                     tabindex="-1"
                     class="absolute inset-0 focus:outline-hidden"
                     data-headlessui-state=""
-                    href="/orders/3000"
+                    href="/ticket-details"
                   ></a>
                   £80.00
                 </td>
@@ -231,7 +231,7 @@ export default function Home() {
                     tabindex="0"
                     class="absolute inset-0 focus:outline-hidden"
                     data-headlessui-state=""
-                    href="/orders/3001"
+                    href="/ticket-details"
                   ></a>
                   3001
                 </td>
@@ -242,7 +242,7 @@ export default function Home() {
                     tabindex="-1"
                     class="absolute inset-0 focus:outline-hidden"
                     data-headlessui-state=""
-                    href="/orders/3001"
+                    href="/ticket-details"
                   ></a>
                   May 5, 2024
                 </td>
@@ -253,7 +253,7 @@ export default function Home() {
                     tabindex="-1"
                     class="absolute inset-0 focus:outline-hidden"
                     data-headlessui-state=""
-                    href="/orders/3001"
+                    href="/ticket-details"
                   ></a>
                   Brent
                 </td>
@@ -264,7 +264,7 @@ export default function Home() {
                     tabindex="-1"
                     class="absolute inset-0 focus:outline-hidden"
                     data-headlessui-state=""
-                    href="/orders/3001"
+                    href="/ticket-details"
                   ></a>
                   <div class="flex items-center gap-2">
                     <span
@@ -283,7 +283,7 @@ export default function Home() {
                     tabindex="-1"
                     class="absolute inset-0 focus:outline-hidden"
                     data-headlessui-state=""
-                    href="/orders/3001"
+                    href="/ticket-details"
                   ></a>
                   £80.00
                 </td>
@@ -296,7 +296,7 @@ export default function Home() {
                     tabindex="0"
                     class="absolute inset-0 focus:outline-hidden"
                     data-headlessui-state=""
-                    href="/orders/3002"
+                    href="/ticket-details"
                   ></a>
                   3002
                 </td>
@@ -307,7 +307,7 @@ export default function Home() {
                     tabindex="-1"
                     class="absolute inset-0 focus:outline-hidden"
                     data-headlessui-state=""
-                    href="/orders/3002"
+                    href="/ticket-details"
                   ></a>
                   Apr 28, 2024
                 </td>
@@ -318,7 +318,7 @@ export default function Home() {
                     tabindex="-1"
                     class="absolute inset-0 focus:outline-hidden"
                     data-headlessui-state=""
-                    href="/orders/3002"
+                    href="/ticket-details"
                   ></a>
                   Bromley
                 </td>
@@ -329,7 +329,7 @@ export default function Home() {
                     tabindex="-1"
                     class="absolute inset-0 focus:outline-hidden"
                     data-headlessui-state=""
-                    href="/orders/3002"
+                    href="/ticket-details"
                   ></a>
                   <div class="flex items-center gap-2">
                     <span
@@ -348,7 +348,7 @@ export default function Home() {
                     tabindex="-1"
                     class="absolute inset-0 focus:outline-hidden"
                     data-headlessui-state=""
-                    href="/orders/3002"
+                    href="/ticket-details"
                   ></a>
                   £150.00
                 </td>
@@ -361,7 +361,7 @@ export default function Home() {
                     tabindex="0"
                     class="absolute inset-0 focus:outline-hidden"
                     data-headlessui-state=""
-                    href="/orders/3003"
+                    href="/ticket-details"
                   ></a>
                   3003
                 </td>
@@ -372,7 +372,7 @@ export default function Home() {
                     tabindex="-1"
                     class="absolute inset-0 focus:outline-hidden"
                     data-headlessui-state=""
-                    href="/orders/3003"
+                    href="/ticket-details"
                   ></a>
                   Apr 23, 2024
                 </td>
@@ -383,7 +383,7 @@ export default function Home() {
                     tabindex="-1"
                     class="absolute inset-0 focus:outline-hidden"
                     data-headlessui-state=""
-                    href="/orders/3003"
+                    href="/ticket-details"
                   ></a>
                   Greenwich
                 </td>
@@ -394,7 +394,7 @@ export default function Home() {
                     tabindex="-1"
                     class="absolute inset-0 focus:outline-hidden"
                     data-headlessui-state=""
-                    href="/orders/3003"
+                    href="/ticket-details"
                   ></a>
                   <div class="flex items-center gap-2">
                     <span
@@ -413,7 +413,7 @@ export default function Home() {
                     tabindex="-1"
                     class="absolute inset-0 focus:outline-hidden"
                     data-headlessui-state=""
-                    href="/orders/3003"
+                    href="/ticket-details"
                   ></a>
                   £80.00
                 </td>
