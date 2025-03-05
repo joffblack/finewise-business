@@ -74,9 +74,9 @@ export default function Home() {
             class="w-full border-t border-zinc-950/10 dark:border-white/10"
           ></hr>
           <div class="mt-6 text-lg/6 font-medium sm:text-sm/6">
-            Total revenue
+            Drivers Registered
           </div>
-          <div class="mt-3 text-3xl/8 font-semibold sm:text-2xl/8">$2.6M</div>
+          <div class="mt-3 text-3xl/8 font-semibold sm:text-2xl/8">37</div>
           <div class="mt-3 text-sm/6 sm:text-xs/6">
             <span class="inline-flex items-center gap-x-1.5 rounded-md px-1.5 py-0.5 text-sm/5 font-medium sm:text-xs/5 forced-colors:outline bg-lime-400/20 text-lime-700 group-data-hover:bg-lime-400/30 dark:bg-lime-400/10 dark:text-lime-300 dark:group-data-hover:bg-lime-400/15">
               +4.5%
@@ -90,9 +90,9 @@ export default function Home() {
             class="w-full border-t border-zinc-950/10 dark:border-white/10"
           ></hr>
           <div class="mt-6 text-lg/6 font-medium sm:text-sm/6">
-            Average order value
+            Vehicles Registered
           </div>
-          <div class="mt-3 text-3xl/8 font-semibold sm:text-2xl/8">$455</div>
+          <div class="mt-3 text-3xl/8 font-semibold sm:text-2xl/8">80</div>
           <div class="mt-3 text-sm/6 sm:text-xs/6">
             <span class="inline-flex items-center gap-x-1.5 rounded-md px-1.5 py-0.5 text-sm/5 font-medium sm:text-xs/5 forced-colors:outline bg-pink-400/15 text-pink-700 group-data-hover:bg-pink-400/25 dark:bg-pink-400/10 dark:text-pink-400 dark:group-data-hover:bg-pink-400/20">
               -0.5%
@@ -106,9 +106,9 @@ export default function Home() {
             class="w-full border-t border-zinc-950/10 dark:border-white/10"
           ></hr>
           <div class="mt-6 text-lg/6 font-medium sm:text-sm/6">
-            Tickets sold
+            Tickets
           </div>
-          <div class="mt-3 text-3xl/8 font-semibold sm:text-2xl/8">5,888</div>
+          <div class="mt-3 text-3xl/8 font-semibold sm:text-2xl/8">18</div>
           <div class="mt-3 text-sm/6 sm:text-xs/6">
             <span class="inline-flex items-center gap-x-1.5 rounded-md px-1.5 py-0.5 text-sm/5 font-medium sm:text-xs/5 forced-colors:outline bg-lime-400/20 text-lime-700 group-data-hover:bg-lime-400/30 dark:bg-lime-400/10 dark:text-lime-300 dark:group-data-hover:bg-lime-400/15">
               +4.5%
@@ -121,18 +121,18 @@ export default function Home() {
             role="presentation"
             class="w-full border-t border-zinc-950/10 dark:border-white/10"
           ></hr>
-          <div class="mt-6 text-lg/6 font-medium sm:text-sm/6">Pageviews</div>
-          <div class="mt-3 text-3xl/8 font-semibold sm:text-2xl/8">823,067</div>
+          <div class="mt-6 text-lg/6 font-medium sm:text-sm/6">Appeals</div>
+          <div class="mt-3 text-3xl/8 font-semibold sm:text-2xl/8">4</div>
           <div class="mt-3 text-sm/6 sm:text-xs/6">
             <span class="inline-flex items-center gap-x-1.5 rounded-md px-1.5 py-0.5 text-sm/5 font-medium sm:text-xs/5 forced-colors:outline bg-lime-400/20 text-lime-700 group-data-hover:bg-lime-400/30 dark:bg-lime-400/10 dark:text-lime-300 dark:group-data-hover:bg-lime-400/15">
-              +21.2%
+              +20.0%
             </span>{" "}
             <span class="text-zinc-500">from last week</span>
           </div>
         </div>
       </div>
       <h2 class="mt-14 text-base/7 font-semibold text-zinc-950 sm:text-sm/6 dark:text-white">
-        Recent orders
+        Recent tickets
       </h2>
 
       <div class="mt-4 [--gutter:--spacing(6)] lg:[--gutter:--spacing(10)] -mx-(--gutter) overflow-x-auto whitespace-nowrap">
@@ -141,16 +141,16 @@ export default function Home() {
             <thead class="text-zinc-500 dark:text-zinc-400">
               <tr class="">
                 <th class="border-b border-b-zinc-950/10 px-4 py-2 font-medium first:pl-(--gutter,--spacing(2)) last:pr-(--gutter,--spacing(2)) dark:border-b-white/10 sm:first:pl-1 sm:last:pr-1">
-                  Order number
+                  Ticket number
                 </th>
                 <th class="border-b border-b-zinc-950/10 px-4 py-2 font-medium first:pl-(--gutter,--spacing(2)) last:pr-(--gutter,--spacing(2)) dark:border-b-white/10 sm:first:pl-1 sm:last:pr-1">
-                  Purchase date
+                  Date
                 </th>
                 <th class="border-b border-b-zinc-950/10 px-4 py-2 font-medium first:pl-(--gutter,--spacing(2)) last:pr-(--gutter,--spacing(2)) dark:border-b-white/10 sm:first:pl-1 sm:last:pr-1">
-                  Customer
+                  Council
                 </th>
                 <th class="border-b border-b-zinc-950/10 px-4 py-2 font-medium first:pl-(--gutter,--spacing(2)) last:pr-(--gutter,--spacing(2)) dark:border-b-white/10 sm:first:pl-1 sm:last:pr-1">
-                  Event
+                  Vehicle
                 </th>
                 <th class="text-right border-b border-b-zinc-950/10 px-4 py-2 font-medium first:pl-(--gutter,--spacing(2)) last:pr-(--gutter,--spacing(2)) dark:border-b-white/10 sm:first:pl-1 sm:last:pr-1">
                   Amount
@@ -190,7 +190,7 @@ export default function Home() {
                     data-headlessui-state=""
                     href="/orders/3000"
                   ></a>
-                  Leslie Alexander
+                  Ealing
                 </td>
                 <td class="relative px-4 first:pl-(--gutter,--spacing(2)) last:pr-(--gutter,--spacing(2)) border-b border-zinc-950/5 dark:border-white/5 py-4 sm:first:pl-1 sm:last:pr-1">
                   <a
@@ -206,9 +206,9 @@ export default function Home() {
                       data-slot="avatar"
                       class="size-6 inline-grid shrink-0 align-middle [--avatar-radius:20%] [--ring-opacity:20%] *:col-start-1 *:row-start-1 outline -outline-offset-1 outline-black/(--ring-opacity) dark:outline-white/(--ring-opacity) rounded-full *:rounded-full"
                     >
-                      <img class="size-full" src="/joff.png" alt=""></img>
+                      <img class="size-full" src="/vw.png" alt=""></img>
                     </span>
-                    <span>Bear Hug: Live in Concert</span>
+                    <span>BA24 PAD</span>
                   </div>
                 </td>
                 <td class="text-right relative px-4 first:pl-(--gutter,--spacing(2)) last:pr-(--gutter,--spacing(2)) border-b border-zinc-950/5 dark:border-white/5 py-4 sm:first:pl-1 sm:last:pr-1">
@@ -220,7 +220,7 @@ export default function Home() {
                     data-headlessui-state=""
                     href="/orders/3000"
                   ></a>
-                  US$80.00
+                  £80.00
                 </td>
               </tr>
               <tr class="has-[[data-row-link][data-focus]]:outline-2 has-[[data-row-link][data-focus]]:-outline-offset-2 has-[[data-row-link][data-focus]]:outline-blue-500 dark:focus-within:bg-white/[2.5%] hover:bg-zinc-950/[2.5%] dark:hover:bg-white/[2.5%]">
@@ -255,7 +255,7 @@ export default function Home() {
                     data-headlessui-state=""
                     href="/orders/3001"
                   ></a>
-                  Michael Foster
+                  Brent
                 </td>
                 <td class="relative px-4 first:pl-(--gutter,--spacing(2)) last:pr-(--gutter,--spacing(2)) border-b border-zinc-950/5 dark:border-white/5 py-4 sm:first:pl-1 sm:last:pr-1">
                   <a
@@ -271,9 +271,9 @@ export default function Home() {
                       data-slot="avatar"
                       class="size-6 inline-grid shrink-0 align-middle [--avatar-radius:20%] [--ring-opacity:20%] *:col-start-1 *:row-start-1 outline -outline-offset-1 outline-black/(--ring-opacity) dark:outline-white/(--ring-opacity) rounded-full *:rounded-full"
                     >
-                      <img class="size-full" src="/joff.png" alt=""></img>
+                      <img class="size-full" src="/vw.png" alt=""></img>
                     </span>
-                    <span>Six Fingers — DJ Set</span>
+                    <span>BA24 LAD</span>
                   </div>
                 </td>
                 <td class="text-right relative px-4 first:pl-(--gutter,--spacing(2)) last:pr-(--gutter,--spacing(2)) border-b border-zinc-950/5 dark:border-white/5 py-4 sm:first:pl-1 sm:last:pr-1">
@@ -285,7 +285,7 @@ export default function Home() {
                     data-headlessui-state=""
                     href="/orders/3001"
                   ></a>
-                  US$299.00
+                  £80.00
                 </td>
               </tr>
               <tr class="has-[[data-row-link][data-focus]]:outline-2 has-[[data-row-link][data-focus]]:-outline-offset-2 has-[[data-row-link][data-focus]]:outline-blue-500 dark:focus-within:bg-white/[2.5%] hover:bg-zinc-950/[2.5%] dark:hover:bg-white/[2.5%]">
@@ -320,7 +320,7 @@ export default function Home() {
                     data-headlessui-state=""
                     href="/orders/3002"
                   ></a>
-                  Dries Vincent
+                  Bromley
                 </td>
                 <td class="relative px-4 first:pl-(--gutter,--spacing(2)) last:pr-(--gutter,--spacing(2)) border-b border-zinc-950/5 dark:border-white/5 py-4 sm:first:pl-1 sm:last:pr-1">
                   <a
@@ -336,9 +336,9 @@ export default function Home() {
                       data-slot="avatar"
                       class="size-6 inline-grid shrink-0 align-middle [--avatar-radius:20%] [--ring-opacity:20%] *:col-start-1 *:row-start-1 outline -outline-offset-1 outline-black/(--ring-opacity) dark:outline-white/(--ring-opacity) rounded-full *:rounded-full"
                     >
-                      <img class="size-full" src="/joff.png" alt=""></img>
+                      <img class="size-full" src="/vw.png" alt=""></img>
                     </span>
-                    <span>We All Look The Same</span>
+                    <span>BA24 NAD</span>
                   </div>
                 </td>
                 <td class="text-right relative px-4 first:pl-(--gutter,--spacing(2)) last:pr-(--gutter,--spacing(2)) border-b border-zinc-950/5 dark:border-white/5 py-4 sm:first:pl-1 sm:last:pr-1">
@@ -350,7 +350,7 @@ export default function Home() {
                     data-headlessui-state=""
                     href="/orders/3002"
                   ></a>
-                  US$150.00
+                  £150.00
                 </td>
               </tr>
               <tr class="has-[[data-row-link][data-focus]]:outline-2 has-[[data-row-link][data-focus]]:-outline-offset-2 has-[[data-row-link][data-focus]]:outline-blue-500 dark:focus-within:bg-white/[2.5%] hover:bg-zinc-950/[2.5%] dark:hover:bg-white/[2.5%]">
@@ -385,7 +385,7 @@ export default function Home() {
                     data-headlessui-state=""
                     href="/orders/3003"
                   ></a>
-                  Lindsay Walton
+                  Greenwich
                 </td>
                 <td class="relative px-4 first:pl-(--gutter,--spacing(2)) last:pr-(--gutter,--spacing(2)) border-b border-zinc-950/5 dark:border-white/5 py-4 sm:first:pl-1 sm:last:pr-1">
                   <a
@@ -401,9 +401,9 @@ export default function Home() {
                       data-slot="avatar"
                       class="size-6 inline-grid shrink-0 align-middle [--avatar-radius:20%] [--ring-opacity:20%] *:col-start-1 *:row-start-1 outline -outline-offset-1 outline-black/(--ring-opacity) dark:outline-white/(--ring-opacity) rounded-full *:rounded-full"
                     >
-                      <img class="size-full" src="/joff.png" alt=""></img>
+                      <img class="size-full" src="/mercedes.png" alt=""></img>
                     </span>
-                    <span>Bear Hug: Live in Concert</span>
+                    <span>BA24 MAD</span>
                   </div>
                 </td>
                 <td class="text-right relative px-4 first:pl-(--gutter,--spacing(2)) last:pr-(--gutter,--spacing(2)) border-b border-zinc-950/5 dark:border-white/5 py-4 sm:first:pl-1 sm:last:pr-1">
@@ -415,7 +415,7 @@ export default function Home() {
                     data-headlessui-state=""
                     href="/orders/3003"
                   ></a>
-                  US$80.00
+                  £80.00
                 </td>
               </tr>
             </tbody>

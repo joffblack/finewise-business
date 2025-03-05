@@ -36,16 +36,18 @@ export default function FWsidebarBody() {
         <SidebarItem>
           <TicketIcon />
           <SidebarLabel>
-            <Link href="/pcns">PCNs</Link>
+            <Link href="/tickets">Tickets</Link>
+          </SidebarLabel>
+        </SidebarItem>
+        <SidebarItem>
+          <TicketIcon />
+          <SidebarLabel>
+            <Link href="/drivers">Drivers</Link>
           </SidebarLabel>
         </SidebarItem>
         <SidebarItem href="/settings">
           <Cog6ToothIcon />
           <SidebarLabel>Settings</SidebarLabel>
-        </SidebarItem>
-        <SidebarItem href="/broadcasts">
-          <MegaphoneIcon />
-          <SidebarLabel>Broadcasts</SidebarLabel>
         </SidebarItem>
       </SidebarSection>
       <SidebarSection className="max-lg:hidden">
