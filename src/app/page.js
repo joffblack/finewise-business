@@ -1,7 +1,5 @@
 import Image from "next/image";
-
-import { Avatar } from '../components/avatar'
-// import { Avatar } from '../components/avatar'
+import { Avatar } from "../components/avatar";
 import {
   Dropdown,
   DropdownButton,
@@ -9,8 +7,13 @@ import {
   DropdownItem,
   DropdownLabel,
   DropdownMenu,
-} from '../components/dropdown'
-import { Navbar, NavbarItem, NavbarSection, NavbarSpacer } from '../components/navbar'
+} from "../components/dropdown";
+import {
+  Navbar,
+  NavbarItem,
+  NavbarSection,
+  NavbarSpacer,
+} from "../components/navbar";
 import {
   Sidebar,
   SidebarBody,
@@ -21,8 +24,8 @@ import {
   SidebarLabel,
   SidebarSection,
   SidebarSpacer,
-} from '../components/sidebar'
-import { SidebarLayout } from '../components/sidebar-layout'
+} from "../components/sidebar";
+import { SidebarLayout } from "../components/sidebar-layout";
 import {
   ArrowRightStartOnRectangleIcon,
   ChevronDownIcon,
@@ -32,7 +35,7 @@ import {
   PlusIcon,
   ShieldCheckIcon,
   UserIcon,
-} from '@heroicons/react/16/solid'
+} from "@heroicons/react/16/solid";
 import {
   Cog6ToothIcon,
   HomeIcon,
@@ -43,8 +46,8 @@ import {
   SparklesIcon,
   Square2StackIcon,
   TicketIcon,
-} from '@heroicons/react/20/solid'
-import {Table} from '../components/table'
+} from "@heroicons/react/20/solid";
+import { Table } from "../components/table";
 
 export default function Home() {
   return (
@@ -56,9 +59,9 @@ export default function Home() {
             <NavbarItem href="/search" aria-label="Search">
               <MagnifyingGlassIcon />
             </NavbarItem>
-            <NavbarItem href="/inbox" aria-label="Inbox">
+            {/* <NavbarItem href="/inbox" aria-label="Inbox">
               <InboxIcon />
-            </NavbarItem>
+            </NavbarItem> */}
             <Dropdown>
               <DropdownButton as={NavbarItem}>
                 <Avatar src="/profile-photo.jpg" square />
@@ -96,11 +99,17 @@ export default function Home() {
           <SidebarHeader>
             <Dropdown>
               <DropdownButton as={SidebarItem} className="lg:mb-2.5">
-                <Avatar src="/tailwind-logo.svg" />
-                <SidebarLabel>Tailwind Labs</SidebarLabel>
+                {/* <Avatar src="/tailwind-logo.svg" /> */}
+                {/* <Avatar src="../assets/finewise-logo.png" /> */}
+
+                <Image src={"/finewise-logo-dark.png"} alt={"finewise-log"} width="24" height="24" />
+                <SidebarLabel>FineWise</SidebarLabel>
                 <ChevronDownIcon />
               </DropdownButton>
-              <DropdownMenu className="min-w-80 lg:min-w-64" anchor="bottom start">
+              <DropdownMenu
+                className="min-w-80 lg:min-w-64"
+                anchor="bottom start"
+              >
                 <DropdownItem href="/teams/1/settings">
                   <Cog8ToothIcon />
                   <DropdownLabel>Settings</DropdownLabel>
@@ -111,7 +120,11 @@ export default function Home() {
                   <DropdownLabel>Tailwind Labs</DropdownLabel>
                 </DropdownItem>
                 <DropdownItem href="/teams/2">
-                  <Avatar slot="icon" initials="WC" className="bg-purple-500 text-white" />
+                  <Avatar
+                    slot="icon"
+                    initials="WC"
+                    className="bg-purple-500 text-white"
+                  />
                   <DropdownLabel>Workcation</DropdownLabel>
                 </DropdownItem>
                 <DropdownDivider />
@@ -121,16 +134,6 @@ export default function Home() {
                 </DropdownItem>
               </DropdownMenu>
             </Dropdown>
-            <SidebarSection className="max-lg:hidden">
-              <SidebarItem href="/search">
-                <MagnifyingGlassIcon />
-                <SidebarLabel>Search</SidebarLabel>
-              </SidebarItem>
-              <SidebarItem href="/inbox">
-                <InboxIcon />
-                <SidebarLabel>Inbox</SidebarLabel>
-              </SidebarItem>
-            </SidebarSection>
           </SidebarHeader>
           <SidebarBody>
             <SidebarSection>
@@ -157,7 +160,9 @@ export default function Home() {
             </SidebarSection>
             <SidebarSection className="max-lg:hidden">
               <SidebarHeading>Upcoming Events</SidebarHeading>
-              <SidebarItem href="/events/1">Bear Hug: Live in Concert</SidebarItem>
+              <SidebarItem href="/events/1">
+                Bear Hug: Live in Concert
+              </SidebarItem>
               <SidebarItem href="/events/2">Viking People</SidebarItem>
               <SidebarItem href="/events/3">Six Fingers — DJ Set</SidebarItem>
               <SidebarItem href="/events/4">We All Look The Same</SidebarItem>
@@ -178,11 +183,18 @@ export default function Home() {
             <Dropdown>
               <DropdownButton as={SidebarItem}>
                 <span className="flex min-w-0 items-center gap-3">
-                  <Avatar src="/profile-photo.jpg" className="size-10" square alt="" />
+                  <Avatar
+                    src="/joff.png"
+                    className="size-10"
+                    square
+                    alt=""
+                  />
                   <span className="min-w-0">
-                    <span className="block truncate text-sm/5 font-medium text-zinc-950 dark:text-white">Erica</span>
+                    <span className="block truncate text-sm/5 font-medium text-zinc-950 dark:text-white">
+                      Joff
+                    </span>
                     <span className="block truncate text-xs/5 font-normal text-zinc-500 dark:text-zinc-400">
-                      erica@example.com
+                      joff@joffblack.com
                     </span>
                   </span>
                 </span>
@@ -219,13 +231,10 @@ export default function Home() {
     >
       {/* The page content */}
 
-      <div>Hello</div>
       <Table></Table>
-
     </SidebarLayout>
-  )
+  );
 }
-
 
 // export default function Home() {
 //   return (
