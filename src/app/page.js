@@ -44,6 +44,7 @@ import {
   Square2StackIcon,
   TicketIcon,
 } from '@heroicons/react/20/solid'
+import {Table} from '../components/table'
 
 export default function Home() {
   return (
@@ -217,6 +218,10 @@ export default function Home() {
       }
     >
       {/* The page content */}
+
+      <div>Hello</div>
+      <Table></Table>
+
     </SidebarLayout>
   )
 }
