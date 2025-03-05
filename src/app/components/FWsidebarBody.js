@@ -23,21 +23,21 @@ export default function FWsidebarBody() {
       <SidebarSection>
         <SidebarItem href="/">
           <HomeIcon />
-          <SidebarLabel>Home</SidebarLabel>
-        </SidebarItem>
-        <SidebarItem href="/events">
-          <Square2StackIcon />
           <SidebarLabel>
-            <Link href="/dashboard">Dashboard</Link>
+            <Link href="/">Dashboard</Link>
           </SidebarLabel>
         </SidebarItem>
-        <SidebarItem href="/events">
+        <SidebarItem>
           <Square2StackIcon />
-          <SidebarLabel>Events</SidebarLabel>
+          <SidebarLabel>
+            <Link href="/vehicles">Vehicles</Link>
+          </SidebarLabel>
         </SidebarItem>
-        <SidebarItem href="/orders">
+        <SidebarItem>
           <TicketIcon />
-          <SidebarLabel>Orders</SidebarLabel>
+          <SidebarLabel>
+            <Link href="/pcns">PCNs</Link>
+          </SidebarLabel>
         </SidebarItem>
         <SidebarItem href="/settings">
           <Cog6ToothIcon />
