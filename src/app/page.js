@@ -1,6 +1,4 @@
-import {
-  Sidebar,
-} from "../components/sidebar";
+import { Sidebar } from "../components/sidebar";
 import { SidebarLayout } from "../components/sidebar-layout";
 import FWsidebarFooter from "./components/FWsidebarFooter";
 import FWsidebarBody from "./components/FWsidebarBody";
@@ -37,10 +35,10 @@ export default function Home() {
               id="headlessui-select-:R6afkja:"
               data-headlessui-state=""
             >
-              <option value="last_week">Last week</option>
-              <option value="last_two">Last two weeks</option>
-              <option value="last_month">Last month</option>
-              <option value="last_quarter">Last quarter</option>
+              <option value="weekly">Weekly</option>
+              <option value="monthly">Monthly</option>
+              <option value="quarterly">Quarterly</option>
+              <option value="annually">Annually</option>
             </select>
             <span class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2">
               <svg
@@ -105,9 +103,7 @@ export default function Home() {
             role="presentation"
             class="w-full border-t border-zinc-950/10 dark:border-white/10"
           ></hr>
-          <div class="mt-6 text-lg/6 font-medium sm:text-sm/6">
-            Tickets
-          </div>
+          <div class="mt-6 text-lg/6 font-medium sm:text-sm/6">Tickets</div>
           <div class="mt-3 text-3xl/8 font-semibold sm:text-2xl/8">18</div>
           <div class="mt-3 text-sm/6 sm:text-xs/6">
             <span class="inline-flex items-center gap-x-1.5 rounded-md px-1.5 py-0.5 text-sm/5 font-medium sm:text-xs/5 forced-colors:outline bg-lime-400/20 text-lime-700 group-data-hover:bg-lime-400/30 dark:bg-lime-400/10 dark:text-lime-300 dark:group-data-hover:bg-lime-400/15">
@@ -131,297 +127,189 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <h2 class="mt-14 text-base/7 font-semibold text-zinc-950 sm:text-sm/6 dark:text-white">
-        Recent tickets (TO CHANGE)
-      </h2>
 
-      <div class="mt-4 [--gutter:--spacing(6)] lg:[--gutter:--spacing(10)] -mx-(--gutter) overflow-x-auto whitespace-nowrap">
-        <div class="inline-block min-w-full align-middle sm:px-(--gutter)">
-          <table class="min-w-full text-left text-sm/6 text-zinc-950 dark:text-white">
-            <thead class="text-zinc-500 dark:text-zinc-400">
-              <tr class="">
-                <th class="border-b border-b-zinc-950/10 px-4 py-2 font-medium first:pl-(--gutter,--spacing(2)) last:pr-(--gutter,--spacing(2)) dark:border-b-white/10 sm:first:pl-1 sm:last:pr-1">
-                  Ticket number
-                </th>
-                <th class="border-b border-b-zinc-950/10 px-4 py-2 font-medium first:pl-(--gutter,--spacing(2)) last:pr-(--gutter,--spacing(2)) dark:border-b-white/10 sm:first:pl-1 sm:last:pr-1">
-                  Date
-                </th>
-                <th class="border-b border-b-zinc-950/10 px-4 py-2 font-medium first:pl-(--gutter,--spacing(2)) last:pr-(--gutter,--spacing(2)) dark:border-b-white/10 sm:first:pl-1 sm:last:pr-1">
-                  Council
-                </th>
-                <th class="border-b border-b-zinc-950/10 px-4 py-2 font-medium first:pl-(--gutter,--spacing(2)) last:pr-(--gutter,--spacing(2)) dark:border-b-white/10 sm:first:pl-1 sm:last:pr-1">
-                  Vehicle
-                </th>
-                <th class="text-right border-b border-b-zinc-950/10 px-4 py-2 font-medium first:pl-(--gutter,--spacing(2)) last:pr-(--gutter,--spacing(2)) dark:border-b-white/10 sm:first:pl-1 sm:last:pr-1">
-                  Amount
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="has-[[data-row-link][data-focus]]:outline-2 has-[[data-row-link][data-focus]]:-outline-offset-2 has-[[data-row-link][data-focus]]:outline-blue-500 dark:focus-within:bg-white/[2.5%] hover:bg-zinc-950/[2.5%] dark:hover:bg-white/[2.5%]">
-                <td class="relative px-4 first:pl-(--gutter,--spacing(2)) last:pr-(--gutter,--spacing(2)) border-b border-zinc-950/5 dark:border-white/5 py-4 sm:first:pl-1 sm:last:pr-1">
-                  <a
-                    data-row-link="true"
-                    aria-label="Order #3000"
-                    tabindex="0"
-                    class="absolute inset-0 focus:outline-hidden"
-                    data-headlessui-state=""
-                    href="/ticket-details"
-                  ></a>
-                  3000
-                </td>
-                <td class="text-zinc-500 relative px-4 first:pl-(--gutter,--spacing(2)) last:pr-(--gutter,--spacing(2)) border-b border-zinc-950/5 dark:border-white/5 py-4 sm:first:pl-1 sm:last:pr-1">
-                  <a
-                    data-row-link="true"
-                    aria-label="Order #3000"
-                    tabindex="-1"
-                    class="absolute inset-0 focus:outline-hidden"
-                    data-headlessui-state=""
-                    href="/ticket-details"
-                  ></a>
-                  May 9, 2024
-                </td>
-                <td class="relative px-4 first:pl-(--gutter,--spacing(2)) last:pr-(--gutter,--spacing(2)) border-b border-zinc-950/5 dark:border-white/5 py-4 sm:first:pl-1 sm:last:pr-1">
-                  <a
-                    data-row-link="true"
-                    aria-label="Order #3000"
-                    tabindex="-1"
-                    class="absolute inset-0 focus:outline-hidden"
-                    data-headlessui-state=""
-                    href="/ticket-details"
-                  ></a>
-                  Ealing
-                </td>
-                <td class="relative px-4 first:pl-(--gutter,--spacing(2)) last:pr-(--gutter,--spacing(2)) border-b border-zinc-950/5 dark:border-white/5 py-4 sm:first:pl-1 sm:last:pr-1">
-                  <a
-                    data-row-link="true"
-                    aria-label="Order #3000"
-                    tabindex="-1"
-                    class="absolute inset-0 focus:outline-hidden"
-                    data-headlessui-state=""
-                    href="/ticket-details"
-                  ></a>
-                  <div class="flex items-center gap-2">
-                    <span
-                      data-slot="avatar"
-                      class="size-6 inline-grid shrink-0 align-middle [--avatar-radius:20%] [--ring-opacity:20%] *:col-start-1 *:row-start-1 outline -outline-offset-1 outline-black/(--ring-opacity) dark:outline-white/(--ring-opacity) rounded-full *:rounded-full"
-                    >
-                      <img class="size-full" src="/vw.png" alt=""></img>
-                    </span>
-                    <span>BA24 PAD</span>
-                  </div>
-                </td>
-                <td class="text-right relative px-4 first:pl-(--gutter,--spacing(2)) last:pr-(--gutter,--spacing(2)) border-b border-zinc-950/5 dark:border-white/5 py-4 sm:first:pl-1 sm:last:pr-1">
-                  <a
-                    data-row-link="true"
-                    aria-label="Order #3000"
-                    tabindex="-1"
-                    class="absolute inset-0 focus:outline-hidden"
-                    data-headlessui-state=""
-                    href="/ticket-details"
-                  ></a>
-                  £80.00
-                </td>
-              </tr>
-              <tr class="has-[[data-row-link][data-focus]]:outline-2 has-[[data-row-link][data-focus]]:-outline-offset-2 has-[[data-row-link][data-focus]]:outline-blue-500 dark:focus-within:bg-white/[2.5%] hover:bg-zinc-950/[2.5%] dark:hover:bg-white/[2.5%]">
-                <td class="relative px-4 first:pl-(--gutter,--spacing(2)) last:pr-(--gutter,--spacing(2)) border-b border-zinc-950/5 dark:border-white/5 py-4 sm:first:pl-1 sm:last:pr-1">
-                  <a
-                    data-row-link="true"
-                    aria-label="Order #3001"
-                    tabindex="0"
-                    class="absolute inset-0 focus:outline-hidden"
-                    data-headlessui-state=""
-                    href="/ticket-details"
-                  ></a>
-                  3001
-                </td>
-                <td class="text-zinc-500 relative px-4 first:pl-(--gutter,--spacing(2)) last:pr-(--gutter,--spacing(2)) border-b border-zinc-950/5 dark:border-white/5 py-4 sm:first:pl-1 sm:last:pr-1">
-                  <a
-                    data-row-link="true"
-                    aria-label="Order #3001"
-                    tabindex="-1"
-                    class="absolute inset-0 focus:outline-hidden"
-                    data-headlessui-state=""
-                    href="/ticket-details"
-                  ></a>
-                  May 5, 2024
-                </td>
-                <td class="relative px-4 first:pl-(--gutter,--spacing(2)) last:pr-(--gutter,--spacing(2)) border-b border-zinc-950/5 dark:border-white/5 py-4 sm:first:pl-1 sm:last:pr-1">
-                  <a
-                    data-row-link="true"
-                    aria-label="Order #3001"
-                    tabindex="-1"
-                    class="absolute inset-0 focus:outline-hidden"
-                    data-headlessui-state=""
-                    href="/ticket-details"
-                  ></a>
-                  Brent
-                </td>
-                <td class="relative px-4 first:pl-(--gutter,--spacing(2)) last:pr-(--gutter,--spacing(2)) border-b border-zinc-950/5 dark:border-white/5 py-4 sm:first:pl-1 sm:last:pr-1">
-                  <a
-                    data-row-link="true"
-                    aria-label="Order #3001"
-                    tabindex="-1"
-                    class="absolute inset-0 focus:outline-hidden"
-                    data-headlessui-state=""
-                    href="/ticket-details"
-                  ></a>
-                  <div class="flex items-center gap-2">
-                    <span
-                      data-slot="avatar"
-                      class="size-6 inline-grid shrink-0 align-middle [--avatar-radius:20%] [--ring-opacity:20%] *:col-start-1 *:row-start-1 outline -outline-offset-1 outline-black/(--ring-opacity) dark:outline-white/(--ring-opacity) rounded-full *:rounded-full"
-                    >
-                      <img class="size-full" src="/vw.png" alt=""></img>
-                    </span>
-                    <span>BA24 LAD</span>
-                  </div>
-                </td>
-                <td class="text-right relative px-4 first:pl-(--gutter,--spacing(2)) last:pr-(--gutter,--spacing(2)) border-b border-zinc-950/5 dark:border-white/5 py-4 sm:first:pl-1 sm:last:pr-1">
-                  <a
-                    data-row-link="true"
-                    aria-label="Order #3001"
-                    tabindex="-1"
-                    class="absolute inset-0 focus:outline-hidden"
-                    data-headlessui-state=""
-                    href="/ticket-details"
-                  ></a>
-                  £80.00
-                </td>
-              </tr>
-              <tr class="has-[[data-row-link][data-focus]]:outline-2 has-[[data-row-link][data-focus]]:-outline-offset-2 has-[[data-row-link][data-focus]]:outline-blue-500 dark:focus-within:bg-white/[2.5%] hover:bg-zinc-950/[2.5%] dark:hover:bg-white/[2.5%]">
-                <td class="relative px-4 first:pl-(--gutter,--spacing(2)) last:pr-(--gutter,--spacing(2)) border-b border-zinc-950/5 dark:border-white/5 py-4 sm:first:pl-1 sm:last:pr-1">
-                  <a
-                    data-row-link="true"
-                    aria-label="Order #3002"
-                    tabindex="0"
-                    class="absolute inset-0 focus:outline-hidden"
-                    data-headlessui-state=""
-                    href="/ticket-details"
-                  ></a>
-                  3002
-                </td>
-                <td class="text-zinc-500 relative px-4 first:pl-(--gutter,--spacing(2)) last:pr-(--gutter,--spacing(2)) border-b border-zinc-950/5 dark:border-white/5 py-4 sm:first:pl-1 sm:last:pr-1">
-                  <a
-                    data-row-link="true"
-                    aria-label="Order #3002"
-                    tabindex="-1"
-                    class="absolute inset-0 focus:outline-hidden"
-                    data-headlessui-state=""
-                    href="/ticket-details"
-                  ></a>
-                  Apr 28, 2024
-                </td>
-                <td class="relative px-4 first:pl-(--gutter,--spacing(2)) last:pr-(--gutter,--spacing(2)) border-b border-zinc-950/5 dark:border-white/5 py-4 sm:first:pl-1 sm:last:pr-1">
-                  <a
-                    data-row-link="true"
-                    aria-label="Order #3002"
-                    tabindex="-1"
-                    class="absolute inset-0 focus:outline-hidden"
-                    data-headlessui-state=""
-                    href="/ticket-details"
-                  ></a>
-                  Bromley
-                </td>
-                <td class="relative px-4 first:pl-(--gutter,--spacing(2)) last:pr-(--gutter,--spacing(2)) border-b border-zinc-950/5 dark:border-white/5 py-4 sm:first:pl-1 sm:last:pr-1">
-                  <a
-                    data-row-link="true"
-                    aria-label="Order #3002"
-                    tabindex="-1"
-                    class="absolute inset-0 focus:outline-hidden"
-                    data-headlessui-state=""
-                    href="/ticket-details"
-                  ></a>
-                  <div class="flex items-center gap-2">
-                    <span
-                      data-slot="avatar"
-                      class="size-6 inline-grid shrink-0 align-middle [--avatar-radius:20%] [--ring-opacity:20%] *:col-start-1 *:row-start-1 outline -outline-offset-1 outline-black/(--ring-opacity) dark:outline-white/(--ring-opacity) rounded-full *:rounded-full"
-                    >
-                      <img class="size-full" src="/vw.png" alt=""></img>
-                    </span>
-                    <span>BA24 NAD</span>
-                  </div>
-                </td>
-                <td class="text-right relative px-4 first:pl-(--gutter,--spacing(2)) last:pr-(--gutter,--spacing(2)) border-b border-zinc-950/5 dark:border-white/5 py-4 sm:first:pl-1 sm:last:pr-1">
-                  <a
-                    data-row-link="true"
-                    aria-label="Order #3002"
-                    tabindex="-1"
-                    class="absolute inset-0 focus:outline-hidden"
-                    data-headlessui-state=""
-                    href="/ticket-details"
-                  ></a>
-                  £150.00
-                </td>
-              </tr>
-              <tr class="has-[[data-row-link][data-focus]]:outline-2 has-[[data-row-link][data-focus]]:-outline-offset-2 has-[[data-row-link][data-focus]]:outline-blue-500 dark:focus-within:bg-white/[2.5%] hover:bg-zinc-950/[2.5%] dark:hover:bg-white/[2.5%]">
-                <td class="relative px-4 first:pl-(--gutter,--spacing(2)) last:pr-(--gutter,--spacing(2)) border-b border-zinc-950/5 dark:border-white/5 py-4 sm:first:pl-1 sm:last:pr-1">
-                  <a
-                    data-row-link="true"
-                    aria-label="Order #3003"
-                    tabindex="0"
-                    class="absolute inset-0 focus:outline-hidden"
-                    data-headlessui-state=""
-                    href="/ticket-details"
-                  ></a>
-                  3003
-                </td>
-                <td class="text-zinc-500 relative px-4 first:pl-(--gutter,--spacing(2)) last:pr-(--gutter,--spacing(2)) border-b border-zinc-950/5 dark:border-white/5 py-4 sm:first:pl-1 sm:last:pr-1">
-                  <a
-                    data-row-link="true"
-                    aria-label="Order #3003"
-                    tabindex="-1"
-                    class="absolute inset-0 focus:outline-hidden"
-                    data-headlessui-state=""
-                    href="/ticket-details"
-                  ></a>
-                  Apr 23, 2024
-                </td>
-                <td class="relative px-4 first:pl-(--gutter,--spacing(2)) last:pr-(--gutter,--spacing(2)) border-b border-zinc-950/5 dark:border-white/5 py-4 sm:first:pl-1 sm:last:pr-1">
-                  <a
-                    data-row-link="true"
-                    aria-label="Order #3003"
-                    tabindex="-1"
-                    class="absolute inset-0 focus:outline-hidden"
-                    data-headlessui-state=""
-                    href="/ticket-details"
-                  ></a>
-                  Greenwich
-                </td>
-                <td class="relative px-4 first:pl-(--gutter,--spacing(2)) last:pr-(--gutter,--spacing(2)) border-b border-zinc-950/5 dark:border-white/5 py-4 sm:first:pl-1 sm:last:pr-1">
-                  <a
-                    data-row-link="true"
-                    aria-label="Order #3003"
-                    tabindex="-1"
-                    class="absolute inset-0 focus:outline-hidden"
-                    data-headlessui-state=""
-                    href="/ticket-details"
-                  ></a>
-                  <div class="flex items-center gap-2">
-                    <span
-                      data-slot="avatar"
-                      class="size-6 inline-grid shrink-0 align-middle [--avatar-radius:20%] [--ring-opacity:20%] *:col-start-1 *:row-start-1 outline -outline-offset-1 outline-black/(--ring-opacity) dark:outline-white/(--ring-opacity) rounded-full *:rounded-full"
-                    >
-                      <img class="size-full" src="/mercedes.png" alt=""></img>
-                    </span>
-                    <span>BA24 MAD</span>
-                  </div>
-                </td>
-                <td class="text-right relative px-4 first:pl-(--gutter,--spacing(2)) last:pr-(--gutter,--spacing(2)) border-b border-zinc-950/5 dark:border-white/5 py-4 sm:first:pl-1 sm:last:pr-1">
-                  <a
-                    data-row-link="true"
-                    aria-label="Order #3003"
-                    tabindex="-1"
-                    class="absolute inset-0 focus:outline-hidden"
-                    data-headlessui-state=""
-                    href="/ticket-details"
-                  ></a>
-                  £80.00
-                </td>
-              </tr>
-            </tbody>
-          </table>
+      <div class="mt-4 grid gap-8 sm:grid-cols-2 xl:grid-cols-4">
+        <div>
+          <hr
+            role="presentation"
+            class="w-full border-t border-zinc-950/10 dark:border-white/10"
+          ></hr>
+          <div class="mt-6 text-lg/6 font-medium sm:text-sm/6">
+            Top ticketed drivers
+          </div>
+          <div class="mt-3 text-sm/6 sm:text-xs/6">
+            <span class="w-60 text-zinc-500">Chris Black</span>
+            <span class="ml-4 inline-flex items-center gap-x-1.5 rounded-md px-1.5 py-0.5 text-sm/5 font-medium sm:text-xs/5 forced-colors:outline bg-red-400/20 text-red-700 group-data-hover:bg-lime-400/30 dark:bg-red-400/10 dark:text-red-300 dark:group-data-hover:bg-red-400/15">
+              12
+            </span>
+          </div>
+          <div class="mt-3 text-sm/6 sm:text-xs/6">
+            <span class="text-zinc-500">Bea Shergill</span>
+            <span class="ml-3 inline-flex items-center gap-x-1.5 rounded-md px-1.5 py-0.5 text-sm/5 font-medium sm:text-xs/5 forced-colors:outline bg-red-400/20 text-red-700 group-data-hover:bg-lime-400/30 dark:bg-red-400/10 dark:text-red-300 dark:group-data-hover:bg-red-400/15">
+              10
+            </span>
+          </div>
+          <div class="mt-3 text-sm/6 sm:text-xs/6">
+            <span class="text-zinc-500">Matt Navin</span>
+            <span class="ml-5 inline-flex items-center gap-x-1.5 rounded-md px-1.5 py-0.5 text-sm/5 font-medium sm:text-xs/5 forced-colors:outline bg-amber-400/20 text-amber-700 group-data-hover:bg-lime-400/30 dark:bg-red-400/10 dark:text-amber-300 dark:group-data-hover:bg-amber-400/15">
+              8
+            </span>
+          </div>
+          <div class="mt-3 text-sm/6 sm:text-xs/6">
+            <span class="text-zinc-500">Joff Black</span>
+            <span class="ml-6 inline-flex items-center gap-x-1.5 rounded-md px-1.5 py-0.5 text-sm/5 font-medium sm:text-xs/5 forced-colors:outline bg-green-400/20 text-green-700 group-data-hover:bg-lime-400/30 dark:bg-green-400/10 dark:text-green-300 dark:group-data-hover:bg-green-400/15">
+              0
+            </span>
+          </div>
+        </div>
+        <div>
+          <hr
+            role="presentation"
+            class="w-full border-t border-zinc-950/10 dark:border-white/10"
+          ></hr>
+          <div class="mt-6 text-lg/6 font-medium sm:text-sm/6">
+            Top ticketed vehicles
+          </div>
+          <div class="mt-3 text-sm/6 sm:text-xs/6">
+            <span class="w-60 text-zinc-500">NA24 BAD</span>
+            <span class="ml-3 inline-flex items-center gap-x-1.5 rounded-md px-1.5 py-0.5 text-sm/5 font-medium sm:text-xs/5 forced-colors:outline bg-red-400/20 text-red-700 group-data-hover:bg-lime-400/30 dark:bg-red-400/10 dark:text-red-300 dark:group-data-hover:bg-red-400/15">
+              7
+            </span>
+          </div>
+          <div class="mt-3 text-sm/6 sm:text-xs/6">
+            <span class="text-zinc-500">NA24 MAD</span>
+            <span class="ml-3 inline-flex items-center gap-x-1.5 rounded-md px-1.5 py-0.5 text-sm/5 font-medium sm:text-xs/5 forced-colors:outline bg-red-400/20 text-red-700 group-data-hover:bg-lime-400/30 dark:bg-red-400/10 dark:text-red-300 dark:group-data-hover:bg-red-400/15">
+              7
+            </span>
+          </div>
+          <div class="mt-3 text-sm/6 sm:text-xs/6">
+            <span class="text-zinc-500">NA24 LAD</span>
+            <span class="ml-3 inline-flex items-center gap-x-1.5 rounded-md px-1.5 py-0.5 text-sm/5 font-medium sm:text-xs/5 forced-colors:outline bg-amber-400/20 text-amber-700 group-data-hover:bg-lime-400/30 dark:bg-red-400/10 dark:text-amber-300 dark:group-data-hover:bg-amber-400/15">
+              6
+            </span>
+          </div>
+          <div class="mt-3 text-sm/6 sm:text-xs/6">
+            <span class="text-zinc-500">NA24 SAD</span>
+            <span class="ml-3 inline-flex items-center gap-x-1.5 rounded-md px-1.5 py-0.5 text-sm/5 font-medium sm:text-xs/5 forced-colors:outline bg-green-400/20 text-green-700 group-data-hover:bg-lime-400/30 dark:bg-green-400/10 dark:text-green-300 dark:group-data-hover:bg-green-400/15">
+              2
+            </span>
+          </div>
+        </div>
+        <div>
+          <hr
+            role="presentation"
+            class="w-full border-t border-zinc-950/10 dark:border-white/10"
+          ></hr>
+          <div class="mt-6 text-lg/6 font-medium sm:text-sm/6">
+            Top ticket types
+          </div>
+          <div class="mt-3 text-sm/6 sm:text-xs/6">
+            <span class="w-60 text-zinc-500">Parking</span>
+            <span class="ml-4 inline-flex items-center gap-x-1.5 rounded-md px-1.5 py-0.5 text-sm/5 font-medium sm:text-xs/5 forced-colors:outline bg-red-400/20 text-red-700 group-data-hover:bg-lime-400/30 dark:bg-red-400/10 dark:text-red-300 dark:group-data-hover:bg-red-400/15">
+              8
+            </span>
+          </div>
+          <div class="mt-3 text-sm/6 sm:text-xs/6">
+            <span class="text-zinc-500">Congestion</span>
+            <span class="ml-3 inline-flex items-center gap-x-1.5 rounded-md px-1.5 py-0.5 text-sm/5 font-medium sm:text-xs/5 forced-colors:outline bg-red-400/20 text-red-700 group-data-hover:bg-lime-400/30 dark:bg-red-400/10 dark:text-red-300 dark:group-data-hover:bg-red-400/15">
+              5
+            </span>
+          </div>
+          <div class="mt-3 text-sm/6 sm:text-xs/6">
+            <span class="text-zinc-500">Bus Lane</span>
+            <span class="ml-5 inline-flex items-center gap-x-1.5 rounded-md px-1.5 py-0.5 text-sm/5 font-medium sm:text-xs/5 forced-colors:outline bg-amber-400/20 text-amber-700 group-data-hover:bg-lime-400/30 dark:bg-red-400/10 dark:text-amber-300 dark:group-data-hover:bg-amber-400/15">
+              8
+            </span>
+          </div>
+          
+        </div>
+        <div>
+          <hr
+            role="presentation"
+            class="w-full border-t border-zinc-950/10 dark:border-white/10"
+          ></hr>
+          <div class="mt-6 text-lg/6 font-medium sm:text-sm/6">
+            Ticket statuses
+          </div>
+          <div class="mt-3 text-sm/6 sm:text-xs/6">
+            <span class="w-60 text-zinc-500">Settled</span>
+            <span class="ml-4 inline-flex items-center gap-x-1.5 rounded-md px-1.5 py-0.5 text-sm/5 font-medium sm:text-xs/5 forced-colors:outline bg-red-400/20 text-red-700 group-data-hover:bg-lime-400/30 dark:bg-red-400/10 dark:text-red-300 dark:group-data-hover:bg-red-400/15">
+              18
+            </span>
+          </div>
+          <div class="mt-3 text-sm/6 sm:text-xs/6">
+            <span class="text-zinc-500">Appealled</span>
+            <span class="ml-3 inline-flex items-center gap-x-1.5 rounded-md px-1.5 py-0.5 text-sm/5 font-medium sm:text-xs/5 forced-colors:outline bg-red-400/20 text-red-700 group-data-hover:bg-lime-400/30 dark:bg-red-400/10 dark:text-red-300 dark:group-data-hover:bg-red-400/15">
+              11
+            </span>
+          </div>
+          <div class="mt-3 text-sm/6 sm:text-xs/6">
+            <span class="text-zinc-500">Rejected</span>
+            <span class="ml-5 inline-flex items-center gap-x-1.5 rounded-md px-1.5 py-0.5 text-sm/5 font-medium sm:text-xs/5 forced-colors:outline bg-amber-400/20 text-amber-700 group-data-hover:bg-lime-400/30 dark:bg-red-400/10 dark:text-amber-300 dark:group-data-hover:bg-amber-400/15">
+              3
+            </span>
+          </div>
+          
         </div>
       </div>
+
+      {/* <h2 class="mt-14 text-base/7 font-semibold text-zinc-950 sm:text-sm/6 dark:text-white">
+        Notifications
+      </h2>
+
+      <div class="flex items-center justify-between">
+        <div class="flex gap-6 py-6">
+          <div class="w-32 shrink-0">
+            <a aria-hidden="true" data-headlessui-state="" href="/events/1000">
+              <img
+                class="w-10 h-10 rounded-lg shadow-sm"
+                src="/finewise-logo-dark.png"
+                alt=""
+              ></img>
+            </a>
+          </div>
+          <div class="space-y-1.5">
+            <div class="text-base/6 font-semibold">
+              <a data-headlessui-state="" href="/events/1000">
+                Bear Hug: Live in Concert
+              </a>
+            </div>
+            <div class="text-xs/6 text-zinc-500">
+              May 20, 2024 at 10 PM <span aria-hidden="true">·</span> Harmony
+              Theater, Winnipeg, MB
+            </div>
+            <div class="text-xs/6 text-zinc-600">350/500 tickets sold</div>
+          </div>
+        </div>
+        <div class="flex items-center gap-4">
+          <span class="max-sm:hidden inline-flex items-center gap-x-1.5 rounded-md px-1.5 py-0.5 text-sm/5 font-medium sm:text-xs/5 forced-colors:outline bg-lime-400/20 text-lime-700 group-data-hover:bg-lime-400/30 dark:bg-lime-400/10 dark:text-lime-300 dark:group-data-hover:bg-lime-400/15">
+            On Sale
+          </span>
+          <button
+            aria-label="More options"
+            id="headlessui-menu-button-:r9c:"
+            type="button"
+            aria-haspopup="menu"
+            aria-expanded="false"
+            data-headlessui-state=""
+            class="relative isolate inline-flex items-baseline justify-center gap-x-2 rounded-lg border text-base/6 font-semibold px-[calc(--spacing(3.5)-1px)] py-[calc(--spacing(2.5)-1px)] sm:px-[calc(--spacing(3)-1px)] sm:py-[calc(--spacing(1.5)-1px)] sm:text-sm/6 focus:outline-hidden data-focus:outline data-focus:outline-2 data-focus:outline-offset-2 data-focus:outline-blue-500 data-disabled:opacity-50 *:data-[slot=icon]:-mx-0.5 *:data-[slot=icon]:my-0.5 *:data-[slot=icon]:size-5 *:data-[slot=icon]:shrink-0 *:data-[slot=icon]:self-center *:data-[slot=icon]:text-(--btn-icon) sm:*:data-[slot=icon]:my-1 sm:*:data-[slot=icon]:size-4 forced-colors:[--btn-icon:ButtonText] forced-colors:data-hover:[--btn-icon:ButtonText] border-transparent text-zinc-950 data-active:bg-zinc-950/5 data-hover:bg-zinc-950/5 dark:text-white dark:data-active:bg-white/10 dark:data-hover:bg-white/10 [--btn-icon:var(--color-zinc-500)] data-active:[--btn-icon:var(--color-zinc-700)] data-hover:[--btn-icon:var(--color-zinc-700)] dark:[--btn-icon:var(--color-zinc-500)] dark:data-active:[--btn-icon:var(--color-zinc-400)] dark:data-hover:[--btn-icon:var(--color-zinc-400)] cursor-default"
+          >
+            <span
+              class="absolute top-1/2 left-1/2 size-[max(100%,2.75rem)] -translate-x-1/2 -translate-y-1/2 [@media(pointer:fine)]:hidden"
+              aria-hidden="true"
+            ></span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 16 16"
+              fill="currentColor"
+              aria-hidden="true"
+              data-slot="icon"
+            >
+              <path d="M8 2a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM8 6.5a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM9.5 12.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0Z"></path>
+            </svg>
+          </button>
+        </div>
+      </div> */}
     </SidebarLayout>
   );
 }

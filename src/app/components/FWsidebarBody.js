@@ -28,17 +28,18 @@ export default function FWsidebarBody() {
           </SidebarLabel>
         </SidebarItem>
         <SidebarItem>
-          <Square2StackIcon />
-          <SidebarLabel>
-            <Link href="/vehicles">Vehicles</Link>
-          </SidebarLabel>
-        </SidebarItem>
-        <SidebarItem>
           <TicketIcon />
           <SidebarLabel>
             <Link href="/tickets">Tickets</Link>
           </SidebarLabel>
         </SidebarItem>
+        <SidebarItem>
+          <Square2StackIcon />
+          <SidebarLabel>
+            <Link href="/vehicles">Vehicles</Link>
+          </SidebarLabel>
+        </SidebarItem>
+
         <SidebarItem>
           <TicketIcon />
           <SidebarLabel>
@@ -54,7 +55,7 @@ export default function FWsidebarBody() {
       </SidebarSection>
       <SidebarSection className="max-lg:hidden">
         <SidebarHeading>Notifications</SidebarHeading>
-        <SidebarItem href="/events/1">X181 PAJ - ticket</SidebarItem>
+        <SidebarItem href="/events/1">FineWise - new area</SidebarItem>
         <SidebarItem href="/events/2">Viking People</SidebarItem>
         <SidebarItem href="/events/3">Six Fingers — DJ Set</SidebarItem>
         <SidebarItem href="/events/4">We All Look The Same</SidebarItem>
