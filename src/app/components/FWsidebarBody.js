@@ -45,9 +45,11 @@ export default function FWsidebarBody() {
             <Link href="/drivers">Drivers</Link>
           </SidebarLabel>
         </SidebarItem>
-        <SidebarItem href="/settings">
+        <SidebarItem>
           <Cog6ToothIcon />
-          <SidebarLabel>Settings</SidebarLabel>
+          <SidebarLabel>
+            <Link href="/settings">Settings</Link>
+          </SidebarLabel>
         </SidebarItem>
       </SidebarSection>
       <SidebarSection className="max-lg:hidden">

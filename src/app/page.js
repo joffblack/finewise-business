@@ -19,12 +19,12 @@ export default function Home() {
     >
       {/* The page content */}
 
-      <h1 className="text-2xl/8 font-semibold text-zinc-950 sm:text-xl/8 dark:text-white">
+      {/* <h1 className="text-2xl/8 font-semibold text-zinc-950 sm:text-xl/8 dark:text-white">
         Good afternoon, Joff
-      </h1>
-      <div className="mt-8 flex items-end justify-between">
+      </h1> */}
+      <div className="flex items-end justify-between">
         <h2 className="text-base/7 font-semibold text-zinc-950 sm:text-sm/6 dark:text-white">
-          Overview
+          Dashboard
         </h2>
         <div>
           <span
@@ -132,7 +132,7 @@ export default function Home() {
         </div>
       </div>
       <h2 class="mt-14 text-base/7 font-semibold text-zinc-950 sm:text-sm/6 dark:text-white">
-        Recent tickets
+        Recent tickets (TO CHANGE)
       </h2>
 
       <div class="mt-4 [--gutter:--spacing(6)] lg:[--gutter:--spacing(10)] -mx-(--gutter) overflow-x-auto whitespace-nowrap">
