@@ -158,7 +158,76 @@ export default function Page() {
                           data-headlessui-state=""
                           href="/ticket-details"
                         ></a>
-                        Joff
+                        Christopher
+                      </td>
+                      <td class="text-zinc-500 relative px-4 first:pl-(--gutter,--spacing(2)) last:pr-(--gutter,--spacing(2)) border-b border-zinc-950/5 dark:border-white/5 py-4 sm:first:pl-1 sm:last:pr-1">
+                        <a
+                          data-row-link="true"
+                          aria-label="Order #3000"
+                          tabindex="-1"
+                          class="absolute inset-0 focus:outline-hidden"
+                          data-headlessui-state=""
+                          href="/ticket-details"
+                        ></a>
+                        Black
+                      </td>
+                      <td class="text-zinc-500 relative px-4 first:pl-(--gutter,--spacing(2)) last:pr-(--gutter,--spacing(2)) border-b border-zinc-950/5 dark:border-white/5 py-4 sm:first:pl-1 sm:last:pr-1">
+                        <a
+                          data-row-link="true"
+                          aria-label="Order #3000"
+                          tabindex="-1"
+                          class="absolute inset-0 focus:outline-hidden"
+                          data-headlessui-state=""
+                          href="/ticket-details"
+                        ></a>
+                        Jun 18, 2024
+                      </td>
+
+                      <td class="text-zinc-500 relative px-4 first:pl-(--gutter,--spacing(2)) last:pr-(--gutter,--spacing(2)) border-b border-zinc-950/5 dark:border-white/5 py-4 sm:first:pl-1 sm:last:pr-1">
+                        <a
+                          data-row-link="true"
+                          aria-label="Order #3000"
+                          tabindex="-1"
+                          class="absolute inset-0 focus:outline-hidden"
+                          data-headlessui-state=""
+                          href="/ticket-details"
+                        ></a>
+                        BLACK1025831234
+                      </td>
+
+                      <td class="text-right relative px-4 first:pl-(--gutter,--spacing(2)) last:pr-(--gutter,--spacing(2)) border-b border-zinc-950/5 dark:border-white/5 py-4 sm:first:pl-1 sm:last:pr-1">
+                        <a
+                          data-row-link="true"
+                          aria-label="Order #3000"
+                          tabindex="-1"
+                          class="absolute inset-0 focus:outline-hidden"
+                          data-headlessui-state=""
+                          href="/ticket-details"
+                        ></a>
+                        £150.00
+                      </td>
+                    </tr>
+                    <tr class="has-[[data-row-link][data-focus]]:outline-2 has-[[data-row-link][data-focus]]:-outline-offset-2 has-[[data-row-link][data-focus]]:outline-blue-500 dark:focus-within:bg-white/[2.5%] hover:bg-zinc-950/[2.5%] dark:hover:bg-white/[2.5%]">
+                      <td class="relative px-4 first:pl-(--gutter,--spacing(2)) last:pr-(--gutter,--spacing(2)) border-b border-zinc-950/5 dark:border-white/5 py-4 sm:first:pl-1 sm:last:pr-1">
+                        <div class="flex items-center gap-2">
+                          <span
+                            data-slot="avatar"
+                            class="size-6 inline-grid shrink-0 align-middle [--avatar-radius:20%] [--ring-opacity:20%] *:col-start-1 *:row-start-1 outline -outline-offset-1 outline-black/(--ring-opacity) dark:outline-white/(--ring-opacity) rounded-full *:rounded-full"
+                          >
+                            <img class="size-full" src="/joff.png" alt=""></img>
+                          </span>
+                        </div>
+                      </td>
+                      <td class="text-zinc-500 relative px-4 first:pl-(--gutter,--spacing(2)) last:pr-(--gutter,--spacing(2)) border-b border-zinc-950/5 dark:border-white/5 py-4 sm:first:pl-1 sm:last:pr-1">
+                        <a
+                          data-row-link="true"
+                          aria-label="Order #3000"
+                          tabindex="-1"
+                          class="absolute inset-0 focus:outline-hidden"
+                          data-headlessui-state=""
+                          href="/ticket-details"
+                        ></a>
+                        Jonathan
                       </td>
                       <td class="text-zinc-500 relative px-4 first:pl-(--gutter,--spacing(2)) last:pr-(--gutter,--spacing(2)) border-b border-zinc-950/5 dark:border-white/5 py-4 sm:first:pl-1 sm:last:pr-1">
                         <a

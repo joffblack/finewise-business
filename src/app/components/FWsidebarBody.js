@@ -55,20 +55,21 @@ export default function FWsidebarBody() {
       </SidebarSection>
       <SidebarSection className="max-lg:hidden">
         <SidebarHeading>Notifications</SidebarHeading>
-        <SidebarItem href="/events/1">FineWise - new area</SidebarItem>
-        <SidebarItem href="/events/2">Viking People</SidebarItem>
-        <SidebarItem href="/events/3">Six Fingers — DJ Set</SidebarItem>
-        <SidebarItem href="/events/4">We All Look The Same</SidebarItem>
+        <SidebarItem href="/">Bromley borough added</SidebarItem>
+        <SidebarItem href="/">New FineWise message</SidebarItem>
+        <SidebarItem href="/">Greenwich borough added</SidebarItem>
+        <SidebarItem href="/">Appeal #302 accepted</SidebarItem>
+        {/* <SidebarItem href="/events/4">Important message</SidebarItem> */}
       </SidebarSection>
       <SidebarSpacer />
       <SidebarSection>
-        <SidebarItem href="/support">
+        <SidebarItem href="/">
           <QuestionMarkCircleIcon />
           <SidebarLabel>Support</SidebarLabel>
         </SidebarItem>
-        <SidebarItem href="/changelog">
+        <SidebarItem href="/">
           <SparklesIcon />
-          <SidebarLabel>Changelog</SidebarLabel>
+          <SidebarLabel>What's Changed</SidebarLabel>
         </SidebarItem>
       </SidebarSection>
     </SidebarBody>

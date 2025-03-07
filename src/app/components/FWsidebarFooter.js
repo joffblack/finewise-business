@@ -36,25 +36,12 @@ export default function FWsidebarFooter() {
           <ChevronUpIcon />
         </DropdownButton>
         <DropdownMenu className="min-w-64" anchor="top start">
-          <DropdownItem href="/my-profile">
-            <UserIcon />
-            <DropdownLabel>My profile</DropdownLabel>
-          </DropdownItem>
-          <DropdownItem href="/settings">
+          <DropdownItem href="/">
             <Cog8ToothIcon />
-            <DropdownLabel>Settings</DropdownLabel>
+            <DropdownLabel>Change Password</DropdownLabel>
           </DropdownItem>
           <DropdownDivider />
-          <DropdownItem href="/privacy-policy">
-            <ShieldCheckIcon />
-            <DropdownLabel>Privacy policy</DropdownLabel>
-          </DropdownItem>
-          <DropdownItem href="/share-feedback">
-            <LightBulbIcon />
-            <DropdownLabel>Share feedback</DropdownLabel>
-          </DropdownItem>
-          <DropdownDivider />
-          <DropdownItem href="/logout">
+          <DropdownItem href="/">
             <ArrowRightStartOnRectangleIcon />
             <DropdownLabel>Sign out</DropdownLabel>
           </DropdownItem>
