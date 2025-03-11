@@ -22,7 +22,6 @@ export default function FWsidebarBody() {
   return (
     <SidebarBody>
       <SidebarSection>
-        
         <SidebarItem href="/">
           <HomeIcon />
           <SidebarLabel>
@@ -50,14 +49,6 @@ export default function FWsidebarBody() {
             <Link href="/drivers">Drivers</Link>
           </SidebarLabel>
         </SidebarItem>
-
-        <SidebarItem href="/settings">
-          <Cog6ToothIcon />
-          <SidebarLabel>
-            <Link href="/settings">Settings</Link>
-          </SidebarLabel>
-        </SidebarItem>
-
       </SidebarSection>
       <SidebarSection className="max-lg:hidden">
         <SidebarHeading>Latest News</SidebarHeading>
@@ -69,6 +60,13 @@ export default function FWsidebarBody() {
       </SidebarSection>
       <SidebarSpacer />
       <SidebarSection>
+        <SidebarItem href="/settings">
+          <Cog6ToothIcon />
+          <SidebarLabel>
+            <Link href="/settings">Settings</Link>
+          </SidebarLabel>
+        </SidebarItem>
+
         <SidebarItem href="/support">
           <QuestionMarkCircleIcon />
           <SidebarLabel>Support</SidebarLabel>
