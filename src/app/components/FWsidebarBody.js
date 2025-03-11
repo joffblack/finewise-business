@@ -60,7 +60,7 @@ export default function FWsidebarBody() {
 
       </SidebarSection>
       <SidebarSection className="max-lg:hidden">
-        <SidebarHeading>Notifications</SidebarHeading>
+        <SidebarHeading>Latest News</SidebarHeading>
         <SidebarItem href="/">Bromley borough added</SidebarItem>
         <SidebarItem href="/">New FineWise message</SidebarItem>
         <SidebarItem href="/">Greenwich borough added</SidebarItem>

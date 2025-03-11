@@ -27,7 +27,7 @@ function FWsidebarHeader() {
       <Dropdown>
         <DropdownButton as={SidebarItem} className="lg:mb-2.5">
           <Image
-            src={"/finewise-logo-dark.png"}
+            src={"/finewise-logo.png"}
             alt={"finewise-log"}
             width="24"
             height="24"

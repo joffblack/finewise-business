@@ -206,7 +206,7 @@ export default function Page() {
                   <thead class="text-zinc-500 dark:text-zinc-400">
                     <tr class="">
                       <th class="w-1/6 border-b border-b-zinc-950/10 px-4 py-2 font-medium first:pl-(--gutter,--spacing(2)) last:pr-(--gutter,--spacing(2)) dark:border-b-white/10 sm:first:pl-1 sm:last:pr-1">
-                        Ticket number
+                        PCN
                       </th>
                       <th class="w-1/6 border-b border-b-zinc-950/10 px-4 py-2 font-medium first:pl-(--gutter,--spacing(2)) last:pr-(--gutter,--spacing(2)) dark:border-b-white/10 sm:first:pl-1 sm:last:pr-1">
                         Date
@@ -237,7 +237,7 @@ export default function Page() {
                           data-headlessui-state=""
                           href="/ticket-details"
                         ></a>
-                        3000
+                        BS12345678
                       </td>
                       <td class="text-zinc-500 relative px-4 first:pl-(--gutter,--spacing(2)) last:pr-(--gutter,--spacing(2)) border-b border-zinc-950/5 dark:border-white/5 py-4 sm:first:pl-1 sm:last:pr-1">
                         <a
@@ -319,7 +319,7 @@ export default function Page() {
                           data-headlessui-state=""
                           href="/ticket-details"
                         ></a>
-                        3001
+                        CR12345678
                       </td>
                       <td class="text-zinc-500 relative px-4 first:pl-(--gutter,--spacing(2)) last:pr-(--gutter,--spacing(2)) border-b border-zinc-950/5 dark:border-white/5 py-4 sm:first:pl-1 sm:last:pr-1">
                         <a
@@ -401,7 +401,7 @@ export default function Page() {
                           data-headlessui-state=""
                           href="/ticket-details"
                         ></a>
-                        3002
+                        EA12345678
                       </td>
                       <td class="text-zinc-500 relative px-4 first:pl-(--gutter,--spacing(2)) last:pr-(--gutter,--spacing(2)) border-b border-zinc-950/5 dark:border-white/5 py-4 sm:first:pl-1 sm:last:pr-1">
                         <a
@@ -483,7 +483,7 @@ export default function Page() {
                           data-headlessui-state=""
                           href="/ticket-details"
                         ></a>
-                        3003
+                        HM46345678
                       </td>
                       <td class="text-zinc-500 relative px-4 first:pl-(--gutter,--spacing(2)) last:pr-(--gutter,--spacing(2)) border-b border-zinc-950/5 dark:border-white/5 py-4 sm:first:pl-1 sm:last:pr-1">
                         <a
@@ -569,7 +569,7 @@ export default function Page() {
                           data-headlessui-state=""
                           href="/ticket-details"
                         ></a>
-                        3004
+                        GW46345678
                       </td>
                       <td class="text-zinc-500 relative px-4 first:pl-(--gutter,--spacing(2)) last:pr-(--gutter,--spacing(2)) border-b border-zinc-950/5 dark:border-white/5 py-4 sm:first:pl-1 sm:last:pr-1">
                         <a
@@ -655,7 +655,7 @@ export default function Page() {
                           data-headlessui-state=""
                           href="/ticket-details"
                         ></a>
-                        3005
+                        HM46345678
                       </td>
                       <td class="text-zinc-500 relative px-4 first:pl-(--gutter,--spacing(2)) last:pr-(--gutter,--spacing(2)) border-b border-zinc-950/5 dark:border-white/5 py-4 sm:first:pl-1 sm:last:pr-1">
                         <a
