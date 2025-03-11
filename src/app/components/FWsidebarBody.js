@@ -69,7 +69,7 @@ export default function FWsidebarBody() {
       </SidebarSection>
       <SidebarSpacer />
       <SidebarSection>
-        <SidebarItem href="/">
+        <SidebarItem href="/support">
           <QuestionMarkCircleIcon />
           <SidebarLabel>Support</SidebarLabel>
         </SidebarItem>
