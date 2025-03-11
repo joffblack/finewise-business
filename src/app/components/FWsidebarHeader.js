@@ -2,7 +2,7 @@ import {
   SidebarHeader,
   SidebarItem,
   SidebarLabel,
-} from "../../components/Sidebar";
+} from "../../components/sidebar";
 import {
   Dropdown,
   DropdownButton,

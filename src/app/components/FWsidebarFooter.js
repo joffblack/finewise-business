@@ -1,4 +1,4 @@
-import { SidebarFooter, SidebarItem } from "../../components/Sidebar";
+import { SidebarFooter, SidebarItem } from "../../components/sidebar";
 import {
   Dropdown,
   DropdownButton,
