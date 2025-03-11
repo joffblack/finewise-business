@@ -9,157 +9,157 @@ import ReactApexChart from "react-apexcharts";
 import { React, Fragment, useState, useEffect } from "react";
 
 export default function Home() {
-  const [tree, setTree] = useState({
-    series: [
-      {
-        data: [
-          {
-            x: "Croydon",
-            y: 218,
-          },
-          {
-            x: "Brent",
-            y: 149,
-          },
-          {
-            x: "Enfield",
-            y: 184,
-          },
-          {
-            x: "Barnet",
-            y: 55,
-          },
-          {
-            x: "Camden",
-            y: 84,
-          },
-          {
-            x: "Islington",
-            y: 31,
-          },
-          {
-            x: "Lewisham",
-            y: 70,
-          },
-          {
-            x: "Greenwich",
-            y: 30,
-          },
-          {
-            x: "Harrow",
-            y: 44,
-          },
-          {
-            x: "Merton",
-            y: 68,
-          },
-          {
-            x: "Sutton",
-            y: 28,
-          },
-          {
-            x: "Hackney",
-            y: 19,
-          },
-          {
-            x: "Haringey",
-            y: 29,
-          },
-        ],
-      },
-    ],
-    options: {
-      legend: {
-        show: false,
-      },
-      chart: {
-        height: 350,
-        type: "treemap",
-      },
-      title: {
-        text: "Areas where you get the most tickets",
-        align: "center",
-      },
-      colors: [
-        "#3B93A5",
-        "#F7B844",
-        "#ADD8C7",
-        "#EC3C65",
-        "#CDD7B6",
-        "#C1F666",
-        "#D43F97",
-        "#1E5D8C",
-        "#421243",
-        "#7F94B0",
-        "#EF6537",
-        "#C0ADDB",
-      ],
-      plotOptions: {
-        treemap: {
-          distributed: true,
-          enableShades: false,
-        },
-      },
-    },
-  });
+  // const [tree, setTree] = useState({
+  //   series: [
+  //     {
+  //       data: [
+  //         {
+  //           x: "Croydon",
+  //           y: 218,
+  //         },
+  //         {
+  //           x: "Brent",
+  //           y: 149,
+  //         },
+  //         {
+  //           x: "Enfield",
+  //           y: 184,
+  //         },
+  //         {
+  //           x: "Barnet",
+  //           y: 55,
+  //         },
+  //         {
+  //           x: "Camden",
+  //           y: 84,
+  //         },
+  //         {
+  //           x: "Islington",
+  //           y: 31,
+  //         },
+  //         {
+  //           x: "Lewisham",
+  //           y: 70,
+  //         },
+  //         {
+  //           x: "Greenwich",
+  //           y: 30,
+  //         },
+  //         {
+  //           x: "Harrow",
+  //           y: 44,
+  //         },
+  //         {
+  //           x: "Merton",
+  //           y: 68,
+  //         },
+  //         {
+  //           x: "Sutton",
+  //           y: 28,
+  //         },
+  //         {
+  //           x: "Hackney",
+  //           y: 19,
+  //         },
+  //         {
+  //           x: "Haringey",
+  //           y: 29,
+  //         },
+  //       ],
+  //     },
+  //   ],
+  //   options: {
+  //     legend: {
+  //       show: false,
+  //     },
+  //     chart: {
+  //       height: 350,
+  //       type: "treemap",
+  //     },
+  //     title: {
+  //       text: "Areas where you get the most tickets",
+  //       align: "center",
+  //     },
+  //     colors: [
+  //       "#3B93A5",
+  //       "#F7B844",
+  //       "#ADD8C7",
+  //       "#EC3C65",
+  //       "#CDD7B6",
+  //       "#C1F666",
+  //       "#D43F97",
+  //       "#1E5D8C",
+  //       "#421243",
+  //       "#7F94B0",
+  //       "#EF6537",
+  //       "#C0ADDB",
+  //     ],
+  //     plotOptions: {
+  //       treemap: {
+  //         distributed: true,
+  //         enableShades: false,
+  //       },
+  //     },
+  //   },
+  // });
 
-  const [bar, setBar] = useState({
-    series: [
-      {
-        name: "Parking",
-        data: [44, 55, 57, 56, 61, 6],
-      },
-      {
-        name: "Congestion",
-        data: [76, 85, 101, 98, 87, 10],
-      },
-      {
-        name: "Bus Lane",
-        data: [35, 41, 36, 26, 45, 8],
-      },
-    ],
-    options: {
-      chart: {
-        type: "bar",
-        height: 350,
-        width: "50%",
-      },
-      plotOptions: {
-        bar: {
-          horizontal: false,
-          columnWidth: "55%",
-          borderRadius: 5,
-          borderRadiusApplication: "end",
-        },
-      },
-      dataLabels: {
-        enabled: false,
-      },
-      stroke: {
-        show: true,
-        width: 2,
-        colors: ["transparent"],
-      },
-      xaxis: {
-        categories: ["Oct", "Nov", "Dec", "Jan", "Feb", "Mar"],
-      },
-      yaxis: {
-        title: {
-          text: "Tickets by month",
-        },
-      },
-      fill: {
-        opacity: 1,
-      },
-      tooltip: {
-        y: {
-          formatter: function (val) {
-            return " " + val + " ";
-          },
-        },
-      },
-    },
-  });
+  // const [bar, setBar] = useState({
+  //   series: [
+  //     {
+  //       name: "Parking",
+  //       data: [44, 55, 57, 56, 61, 6],
+  //     },
+  //     {
+  //       name: "Congestion",
+  //       data: [76, 85, 101, 98, 87, 10],
+  //     },
+  //     {
+  //       name: "Bus Lane",
+  //       data: [35, 41, 36, 26, 45, 8],
+  //     },
+  //   ],
+  //   options: {
+  //     chart: {
+  //       type: "bar",
+  //       height: 350,
+  //       width: "50%",
+  //     },
+  //     plotOptions: {
+  //       bar: {
+  //         horizontal: false,
+  //         columnWidth: "55%",
+  //         borderRadius: 5,
+  //         borderRadiusApplication: "end",
+  //       },
+  //     },
+  //     dataLabels: {
+  //       enabled: false,
+  //     },
+  //     stroke: {
+  //       show: true,
+  //       width: 2,
+  //       colors: ["transparent"],
+  //     },
+  //     xaxis: {
+  //       categories: ["Oct", "Nov", "Dec", "Jan", "Feb", "Mar"],
+  //     },
+  //     yaxis: {
+  //       title: {
+  //         text: "Tickets by month",
+  //       },
+  //     },
+  //     fill: {
+  //       opacity: 1,
+  //     },
+  //     tooltip: {
+  //       y: {
+  //         formatter: function (val) {
+  //           return " " + val + " ";
+  //         },
+  //       },
+  //     },
+  //   },
+  // });
 
   return (
     <SidebarLayout
@@ -406,7 +406,7 @@ export default function Home() {
 
 
 
-      <div className="flex flex-row mt-10">
+      {/* <div className="flex flex-row mt-10">
         <div className="w-[50%] p-8">
           <div id="chart">
             <ReactApexChart
@@ -432,7 +432,7 @@ export default function Home() {
             <div id="html-dist"></div>
           </div>
         </div>
-      </div>
+      </div> */}
     </SidebarLayout>
   );
 }
