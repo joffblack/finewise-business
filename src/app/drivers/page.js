@@ -117,7 +117,7 @@ export default function Page() {
                 <table class="min-w-full text-left text-sm/6 text-zinc-950 dark:text-white">
                   <thead class="text-zinc-500 dark:text-zinc-400">
                     <tr class="">
-                      <th class="w-1/6 border-b border-b-zinc-950/10 px-4 py-2 font-medium first:pl-(--gutter,--spacing(2)) last:pr-(--gutter,--spacing(2)) dark:border-b-white/10 sm:first:pl-1 sm:last:pr-1">
+                      <th class="w-1/10 border-b border-b-zinc-950/10 px-4 py-2 font-medium first:pl-(--gutter,--spacing(2)) last:pr-(--gutter,--spacing(2)) dark:border-b-white/10 sm:first:pl-1 sm:last:pr-1">
                         Avatar
                       </th>
                       <th class="w-1/6 border-b border-b-zinc-950/10 px-4 py-2 font-medium first:pl-(--gutter,--spacing(2)) last:pr-(--gutter,--spacing(2)) dark:border-b-white/10 sm:first:pl-1 sm:last:pr-1">

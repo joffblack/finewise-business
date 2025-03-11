@@ -73,7 +73,7 @@ export default function FWsidebarBody() {
           <QuestionMarkCircleIcon />
           <SidebarLabel>Support</SidebarLabel>
         </SidebarItem>
-        <SidebarItem href="/">
+        <SidebarItem href="/whats-changed">
           <SparklesIcon />
           <SidebarLabel>What&apos;s Changed</SidebarLabel>
         </SidebarItem>
