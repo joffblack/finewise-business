@@ -33,14 +33,14 @@ function FWsidebarHeader() {
             height="24"
           />
           <SidebarLabel>FineWise</SidebarLabel>
-          <ChevronDownIcon />
+          {/* <ChevronDownIcon /> */}
         </DropdownButton>
-        <DropdownMenu className="min-w-80 lg:min-w-64" anchor="bottom start">
-          <DropdownItem href="/">
+        {/* <DropdownMenu className="min-w-80 lg:min-w-64" anchor="bottom start"> */}
+          {/* <DropdownItem href="/">
             <Cog8ToothIcon />
             <DropdownLabel>Settings</DropdownLabel>
-          </DropdownItem>
-        </DropdownMenu>
+          </DropdownItem> */}
+        {/* </DropdownMenu> */}
       </Dropdown>
     </SidebarHeader>
   );

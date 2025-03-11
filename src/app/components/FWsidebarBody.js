@@ -22,37 +22,42 @@ export default function FWsidebarBody() {
   return (
     <SidebarBody>
       <SidebarSection>
+        
         <SidebarItem href="/">
           <HomeIcon />
           <SidebarLabel>
             <Link href="/">Dashboard</Link>
           </SidebarLabel>
         </SidebarItem>
-        <SidebarItem>
+
+        <SidebarItem href="/tickets">
           <TicketIcon />
           <SidebarLabel>
             <Link href="/tickets">Tickets</Link>
           </SidebarLabel>
         </SidebarItem>
-        <SidebarItem>
+
+        <SidebarItem href="/vehicles">
           <Square2StackIcon />
           <SidebarLabel>
             <Link href="/vehicles">Vehicles</Link>
           </SidebarLabel>
         </SidebarItem>
 
-        <SidebarItem>
+        <SidebarItem href="/drivers">
           <TicketIcon />
           <SidebarLabel>
             <Link href="/drivers">Drivers</Link>
           </SidebarLabel>
         </SidebarItem>
-        <SidebarItem>
+
+        <SidebarItem href="/settings">
           <Cog6ToothIcon />
           <SidebarLabel>
             <Link href="/settings">Settings</Link>
           </SidebarLabel>
         </SidebarItem>
+
       </SidebarSection>
       <SidebarSection className="max-lg:hidden">
         <SidebarHeading>Notifications</SidebarHeading>

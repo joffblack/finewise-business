@@ -10,6 +10,7 @@ import { React, Fragment, useState, useEffect } from "react";
 import dynamic from "next/dynamic";
 
 export default function Home() {
+  
   const ReactApexChart = dynamic(() => import("react-apexcharts"), {
     ssr: false,
   });
