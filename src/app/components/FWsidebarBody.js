@@ -52,10 +52,10 @@ export default function FWsidebarBody() {
       </SidebarSection>
       <SidebarSection className="max-lg:hidden">
         <SidebarHeading>Latest News</SidebarHeading>
-        <SidebarItem href="/">Bromley borough added</SidebarItem>
-        <SidebarItem href="/">New FineWise message</SidebarItem>
-        <SidebarItem href="/">Greenwich borough added</SidebarItem>
-        <SidebarItem href="/">Appeal #302 accepted</SidebarItem>
+        <SidebarItem href="/latest-news">Bromley borough added</SidebarItem>
+        <SidebarItem href="/latest-news">New FineWise message</SidebarItem>
+        <SidebarItem href="/latest-news">Greenwich borough added</SidebarItem>
+        <SidebarItem href="/latest-news">Appeal #302 accepted</SidebarItem>
         {/* <SidebarItem href="/events/4">Important message</SidebarItem> */}
       </SidebarSection>
       <SidebarSpacer />
