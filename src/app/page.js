@@ -229,7 +229,7 @@ export default function Home() {
             class="w-full border-t border-zinc-950/10 dark:border-white/10"
           ></hr>
           <div class="mt-6 text-lg/6 font-medium sm:text-sm/6">
-            Drivers Registered
+          Tickets Issued
           </div>
           <div class="mt-3 text-3xl/8 font-semibold sm:text-2xl/8">37</div>
           <div class="mt-3 text-sm/6 sm:text-xs/6">
@@ -245,9 +245,9 @@ export default function Home() {
             class="w-full border-t border-zinc-950/10 dark:border-white/10"
           ></hr>
           <div class="mt-6 text-lg/6 font-medium sm:text-sm/6">
-            Vehicles Registered
+          Ticket Value
           </div>
-          <div class="mt-3 text-3xl/8 font-semibold sm:text-2xl/8">80</div>
+          <div class="mt-3 text-3xl/8 font-semibold sm:text-2xl/8">£125.00</div>
           <div class="mt-3 text-sm/6 sm:text-xs/6">
             <span class="inline-flex items-center gap-x-1.5 rounded-md px-1.5 py-0.5 text-sm/5 font-medium sm:text-xs/5 forced-colors:outline bg-pink-400/15 text-pink-700 group-data-hover:bg-pink-400/25 dark:bg-pink-400/10 dark:text-pink-400 dark:group-data-hover:bg-pink-400/20">
               -0.5%
@@ -260,7 +260,7 @@ export default function Home() {
             role="presentation"
             class="w-full border-t border-zinc-950/10 dark:border-white/10"
           ></hr>
-          <div class="mt-6 text-lg/6 font-medium sm:text-sm/6">Tickets</div>
+          <div class="mt-6 text-lg/6 font-medium sm:text-sm/6">Vehicles Ticketed</div>
           <div class="mt-3 text-3xl/8 font-semibold sm:text-2xl/8">18</div>
           <div class="mt-3 text-sm/6 sm:text-xs/6">
             <span class="inline-flex items-center gap-x-1.5 rounded-md px-1.5 py-0.5 text-sm/5 font-medium sm:text-xs/5 forced-colors:outline bg-lime-400/20 text-lime-700 group-data-hover:bg-lime-400/30 dark:bg-lime-400/10 dark:text-lime-300 dark:group-data-hover:bg-lime-400/15">
@@ -274,7 +274,7 @@ export default function Home() {
             role="presentation"
             class="w-full border-t border-zinc-950/10 dark:border-white/10"
           ></hr>
-          <div class="mt-6 text-lg/6 font-medium sm:text-sm/6">Appeals</div>
+          <div class="mt-6 text-lg/6 font-medium sm:text-sm/6">Appeals Submitted</div>
           <div class="mt-3 text-3xl/8 font-semibold sm:text-2xl/8">4</div>
           <div class="mt-3 text-sm/6 sm:text-xs/6">
             <span class="inline-flex items-center gap-x-1.5 rounded-md px-1.5 py-0.5 text-sm/5 font-medium sm:text-xs/5 forced-colors:outline bg-lime-400/20 text-lime-700 group-data-hover:bg-lime-400/30 dark:bg-lime-400/10 dark:text-lime-300 dark:group-data-hover:bg-lime-400/15">

@@ -61,7 +61,7 @@ export default function Page() {
         </div>
       </div>
 
-      <div class="mt-4 grid gap-8 sm:grid-cols-2 xl:grid-cols-4">
+      {/* <div class="mt-4 grid gap-8 sm:grid-cols-2 xl:grid-cols-4">
         <div>
           <hr
             role="presentation"
@@ -120,7 +120,7 @@ export default function Page() {
             <span class="text-zinc-500">from last week</span>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* <div class="mt-4 max-sm:w-full sm:flex-1">
         <div class="mt-4 flex max-w-xl gap-4">

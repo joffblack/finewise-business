@@ -18,7 +18,7 @@ export default function Page() {
       }
     >
       <div className="flex items-end justify-between">
-        <h2 className="text-2xl/8 font-semibold text-zinc-950 sm:text-xl/8 dark:text-white">
+        <h2 className="text-2xl/8 font-semibold text-zinc-950 sm:text-xl/8 dark:text-white mt-1">
           Vehicles
         </h2>
       </div>
