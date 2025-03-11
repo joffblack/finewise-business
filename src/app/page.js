@@ -7,11 +7,12 @@ import FWsidebarHeader from "./components/FWsidebarHeader";
 // import ReactApexChart from "react-apexcharts";
 // import Chart from "react-apexcharts";
 import { React, Fragment, useState, useEffect } from "react";
-import dynamic from 'next/dynamic'
+import dynamic from "next/dynamic";
 
 export default function Home() {
-
-  const ReactApexChart = dynamic(() => import('react-apexcharts'), { ssr: false });
+  const ReactApexChart = dynamic(() => import("react-apexcharts"), {
+    ssr: false,
+  });
 
   const [tree, setTree] = useState({
     series: [
@@ -409,14 +410,12 @@ export default function Home() {
       <div className="flex flex-row mt-10">
         <div className="w-[50%] p-8">
           <div id="chart">
-            {/* {typeof window !== "undefined" && ( */}
-              <ReactApexChart
-                options={bar.options}
-                series={bar.series}
-                type="bar"
-                height={350}
-              />
-            {/* )} */}
+            <ReactApexChart
+              options={bar.options}
+              series={bar.series}
+              type="bar"
+              height={350}
+            />
           </div>
           <div id="html-dist"></div>
         </div>
@@ -424,14 +423,14 @@ export default function Home() {
         <div className="w-[50%] p-8 ml-[5%]">
           <div>
             <div id="chart">
-              {typeof window !== "undefined" && (
-                <ReactApexChart
-                  options={tree.options}
-                  series={tree.series}
-                  type="treemap"
-                  height={300}
-                />
-              )}
+              {/* {typeof window !== "undefined" && ( */}
+              <ReactApexChart
+                options={tree.options}
+                series={tree.series}
+                type="treemap"
+                height={300}
+              />
+              {/* )} */}
             </div>
             <div id="html-dist"></div>
           </div>
