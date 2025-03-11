@@ -69,7 +69,7 @@ export default function FWsidebarBody() {
         </SidebarItem>
         <SidebarItem href="/">
           <SparklesIcon />
-          <SidebarLabel>What's Changed</SidebarLabel>
+          <SidebarLabel>What&apos;s Changed</SidebarLabel>
         </SidebarItem>
       </SidebarSection>
     </SidebarBody>

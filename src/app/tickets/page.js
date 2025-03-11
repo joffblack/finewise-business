@@ -1,3 +1,4 @@
+"use client";
 import { Sidebar } from "../../components/sidebar";
 import { SidebarLayout } from "../../components/sidebar-layout";
 import FWsidebarFooter from "../components/FWsidebarFooter";
@@ -16,7 +17,7 @@ export default function Page() {
       }
     >
       <div className="flex items-end justify-between">
-        <h2 className="text-base/7 font-semibold text-zinc-950 sm:text-sm/6 dark:text-white">
+        <h2 className="text-2xl/8 font-semibold text-zinc-950 sm:text-xl/8 dark:text-white">
           Tickets
         </h2>
         <div>
@@ -262,7 +263,7 @@ export default function Page() {
                         <div class="flex items-center gap-2">
                           <span
                             data-slot="avatar"
-                            class="size-6 inline-grid shrink-0 align-middle [--avatar-radius:20%] [--ring-opacity:20%] *:col-start-1 *:row-start-1 outline -outline-offset-1 outline-black/(--ring-opacity) dark:outline-white/(--ring-opacity) rounded-full *:rounded-full"
+                            class="size-8 inline-grid shrink-0 align-middle [--avatar-radius:20%] [--ring-opacity:20%] *:col-start-1 *:row-start-1 outline -outline-offset-1 outline-black/(--ring-opacity) dark:outline-white/(--ring-opacity) rounded-full *:rounded-full"
                           >
                             <img class="size-full" src="/vw.png" alt=""></img>
                           </span>
@@ -344,7 +345,7 @@ export default function Page() {
                         <div class="flex items-center gap-2">
                           <span
                             data-slot="avatar"
-                            class="size-6 inline-grid shrink-0 align-middle [--avatar-radius:20%] [--ring-opacity:20%] *:col-start-1 *:row-start-1 outline -outline-offset-1 outline-black/(--ring-opacity) dark:outline-white/(--ring-opacity) rounded-full *:rounded-full"
+                            class="size-8 inline-grid shrink-0 align-middle [--avatar-radius:20%] [--ring-opacity:20%] *:col-start-1 *:row-start-1 outline -outline-offset-1 outline-black/(--ring-opacity) dark:outline-white/(--ring-opacity) rounded-full *:rounded-full"
                           >
                             <img class="size-full" src="/vw.png" alt=""></img>
                           </span>
@@ -426,7 +427,7 @@ export default function Page() {
                         <div class="flex items-center gap-2">
                           <span
                             data-slot="avatar"
-                            class="size-6 inline-grid shrink-0 align-middle [--avatar-radius:20%] [--ring-opacity:20%] *:col-start-1 *:row-start-1 outline -outline-offset-1 outline-black/(--ring-opacity) dark:outline-white/(--ring-opacity) rounded-full *:rounded-full"
+                            class="size-8 inline-grid shrink-0 align-middle [--avatar-radius:20%] [--ring-opacity:20%] *:col-start-1 *:row-start-1 outline -outline-offset-1 outline-black/(--ring-opacity) dark:outline-white/(--ring-opacity) rounded-full *:rounded-full"
                           >
                             <img class="size-full" src="/vw.png" alt=""></img>
                           </span>
@@ -508,7 +509,7 @@ export default function Page() {
                         <div class="flex items-center gap-2">
                           <span
                             data-slot="avatar"
-                            class="size-6 inline-grid shrink-0 align-middle [--avatar-radius:20%] [--ring-opacity:20%] *:col-start-1 *:row-start-1 outline -outline-offset-1 outline-black/(--ring-opacity) dark:outline-white/(--ring-opacity) rounded-full *:rounded-full"
+                            class="size-8 inline-grid shrink-0 align-middle [--avatar-radius:20%] [--ring-opacity:20%] *:col-start-1 *:row-start-1 outline -outline-offset-1 outline-black/(--ring-opacity) dark:outline-white/(--ring-opacity) rounded-full *:rounded-full"
                           >
                             <img
                               class="size-full"
@@ -594,7 +595,7 @@ export default function Page() {
                         <div class="flex items-center gap-2">
                           <span
                             data-slot="avatar"
-                            class="size-6 inline-grid shrink-0 align-middle [--avatar-radius:20%] [--ring-opacity:20%] *:col-start-1 *:row-start-1 outline -outline-offset-1 outline-black/(--ring-opacity) dark:outline-white/(--ring-opacity) rounded-full *:rounded-full"
+                            class="size-8 inline-grid shrink-0 align-middle [--avatar-radius:20%] [--ring-opacity:20%] *:col-start-1 *:row-start-1 outline -outline-offset-1 outline-black/(--ring-opacity) dark:outline-white/(--ring-opacity) rounded-full *:rounded-full"
                           >
                             <img
                               class="size-full"
@@ -680,7 +681,7 @@ export default function Page() {
                         <div class="flex items-center gap-2">
                           <span
                             data-slot="avatar"
-                            class="size-6 inline-grid shrink-0 align-middle [--avatar-radius:20%] [--ring-opacity:20%] *:col-start-1 *:row-start-1 outline -outline-offset-1 outline-black/(--ring-opacity) dark:outline-white/(--ring-opacity) rounded-full *:rounded-full"
+                            class="size-8 inline-grid shrink-0 align-middle [--avatar-radius:20%] [--ring-opacity:20%] *:col-start-1 *:row-start-1 outline -outline-offset-1 outline-black/(--ring-opacity) dark:outline-white/(--ring-opacity) rounded-full *:rounded-full"
                           >
                             <img
                               class="size-full"

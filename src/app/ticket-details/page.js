@@ -1,3 +1,4 @@
+"use client";
 import { Sidebar } from "../../components/sidebar";
 import { SidebarLayout } from "../../components/sidebar-layout";
 import FWsidebarFooter from "../components/FWsidebarFooter";

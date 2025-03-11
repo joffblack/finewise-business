@@ -34,7 +34,7 @@ function FWsidebarHeader() {
           <ChevronDownIcon />
         </DropdownButton>
         <DropdownMenu className="min-w-80 lg:min-w-64" anchor="bottom start">
-          <DropdownItem href="/teams/1/settings">
+          <DropdownItem href="/">
             <Cog8ToothIcon />
             <DropdownLabel>Settings</DropdownLabel>
           </DropdownItem>

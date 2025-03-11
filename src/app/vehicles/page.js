@@ -1,8 +1,10 @@
+"use client";
 import { Sidebar } from "../../components/sidebar";
 import { SidebarLayout } from "../../components/sidebar-layout";
 import FWsidebarFooter from "../components/FWsidebarFooter";
 import FWsidebarBody from "../components/FWsidebarBody";
 import FWsidebarHeader from "../components/FWsidebarHeader";
+import Link from "next/link";
 
 export default function Page() {
   return (
@@ -16,7 +18,7 @@ export default function Page() {
       }
     >
       <div className="flex items-end justify-between">
-        <h2 className="text-base/7 font-semibold text-zinc-950 sm:text-sm/6 dark:text-white">
+        <h2 className="text-2xl/8 font-semibold text-zinc-950 sm:text-xl/8 dark:text-white">
           Vehicles
         </h2>
       </div>
@@ -109,17 +111,19 @@ export default function Page() {
           Import
         </button>
 
-        <button
-          class="relative isolate inline-flex items-baseline justify-center gap-x-2 rounded-lg border text-base/6 font-semibold px-[calc(--spacing(3.5)-1px)] py-[calc(--spacing(2.5)-1px)] sm:px-[calc(--spacing(3)-1px)] sm:py-[calc(--spacing(1.5)-1px)] sm:text-sm/6 focus:outline-hidden data-focus:outline data-focus:outline-2 data-focus:outline-offset-2 data-focus:outline-blue-500 data-disabled:opacity-50 *:data-[slot=icon]:-mx-0.5 *:data-[slot=icon]:my-0.5 *:data-[slot=icon]:size-5 *:data-[slot=icon]:shrink-0 *:data-[slot=icon]:self-center *:data-[slot=icon]:text-(--btn-icon) sm:*:data-[slot=icon]:my-1 sm:*:data-[slot=icon]:size-4 forced-colors:[--btn-icon:ButtonText] forced-colors:data-hover:[--btn-icon:ButtonText] border-transparent bg-(--btn-border) dark:bg-(--btn-bg) before:absolute before:inset-0 before:-z-10 before:rounded-[calc(var(--radius-lg)-1px)] before:bg-(--btn-bg) before:shadow-sm dark:before:hidden dark:border-white/5 after:absolute after:inset-0 after:-z-10 after:rounded-[calc(var(--radius-lg)-1px)] after:shadow-[shadow:inset_0_1px_--theme(--color-white/15%)] data-active:after:bg-(--btn-hover-overlay) data-hover:after:bg-(--btn-hover-overlay) dark:after:-inset-px dark:after:rounded-lg data-disabled:before:shadow-none data-disabled:after:shadow-none text-white [--btn-bg:var(--color-zinc-900)] [--btn-border:var(--color-zinc-950)]/90 [--btn-hover-overlay:var(--color-white)]/10 dark:text-white dark:[--btn-bg:var(--color-zinc-600)] dark:[--btn-hover-overlay:var(--color-white)]/5 [--btn-icon:var(--color-zinc-400)] data-active:[--btn-icon:var(--color-zinc-300)] data-hover:[--btn-icon:var(--color-zinc-300)] cursor-default"
-          type="button"
-          data-headlessui-state=""
-        >
-          <span
-            class="absolute top-1/2 left-1/2 size-[max(100%,2.75rem)] -translate-x-1/2 -translate-y-1/2 [@media(pointer:fine)]:hidden"
-            aria-hidden="true"
-          ></span>
-          Add vehicle
-        </button>
+        {/* <Link href="vehicle-add"> */}
+          <button
+            class="relative isolate inline-flex items-baseline justify-center gap-x-2 rounded-lg border text-base/6 font-semibold px-[calc(--spacing(3.5)-1px)] py-[calc(--spacing(2.5)-1px)] sm:px-[calc(--spacing(3)-1px)] sm:py-[calc(--spacing(1.5)-1px)] sm:text-sm/6 focus:outline-hidden data-focus:outline data-focus:outline-2 data-focus:outline-offset-2 data-focus:outline-blue-500 data-disabled:opacity-50 *:data-[slot=icon]:-mx-0.5 *:data-[slot=icon]:my-0.5 *:data-[slot=icon]:size-5 *:data-[slot=icon]:shrink-0 *:data-[slot=icon]:self-center *:data-[slot=icon]:text-(--btn-icon) sm:*:data-[slot=icon]:my-1 sm:*:data-[slot=icon]:size-4 forced-colors:[--btn-icon:ButtonText] forced-colors:data-hover:[--btn-icon:ButtonText] border-transparent bg-(--btn-border) dark:bg-(--btn-bg) before:absolute before:inset-0 before:-z-10 before:rounded-[calc(var(--radius-lg)-1px)] before:bg-(--btn-bg) before:shadow-sm dark:before:hidden dark:border-white/5 after:absolute after:inset-0 after:-z-10 after:rounded-[calc(var(--radius-lg)-1px)] after:shadow-[shadow:inset_0_1px_--theme(--color-white/15%)] data-active:after:bg-(--btn-hover-overlay) data-hover:after:bg-(--btn-hover-overlay) dark:after:-inset-px dark:after:rounded-lg data-disabled:before:shadow-none data-disabled:after:shadow-none text-white [--btn-bg:var(--color-zinc-900)] [--btn-border:var(--color-zinc-950)]/90 [--btn-hover-overlay:var(--color-white)]/10 dark:text-white dark:[--btn-bg:var(--color-zinc-600)] dark:[--btn-hover-overlay:var(--color-white)]/5 [--btn-icon:var(--color-zinc-400)] data-active:[--btn-icon:var(--color-zinc-300)] data-hover:[--btn-icon:var(--color-zinc-300)] cursor-default"
+            type="button"
+            data-headlessui-state=""
+          >
+            <span
+              class="absolute top-1/2 left-1/2 size-[max(100%,2.75rem)] -translate-x-1/2 -translate-y-1/2 [@media(pointer:fine)]:hidden"
+              aria-hidden="true"
+            ></span>
+            Add vehicle
+          </button>
+        {/* </Link> */}
       </div>
 
       <div class="grow lg:rounded-lg lg:bg-white lg:shadow-xs lg:ring-zinc-950/5 dark:lg:bg-zinc-900 dark:lg:ring-white/10">
@@ -156,7 +160,7 @@ export default function Page() {
                         <div class="flex items-center gap-2">
                           <span
                             data-slot="avatar"
-                            class="size-6 inline-grid shrink-0 align-middle [--avatar-radius:20%] [--ring-opacity:20%] *:col-start-1 *:row-start-1 outline -outline-offset-1 outline-black/(--ring-opacity) dark:outline-white/(--ring-opacity) rounded-full *:rounded-full"
+                            class="size-8 inline-grid shrink-0 align-middle [--avatar-radius:20%] [--ring-opacity:20%] *:col-start-1 *:row-start-1 outline -outline-offset-1 outline-black/(--ring-opacity) dark:outline-white/(--ring-opacity) rounded-full *:rounded-full"
                           >
                             <img class="size-full" src="/vw.png" alt=""></img>
                           </span>
@@ -169,9 +173,9 @@ export default function Page() {
                           tabindex="-1"
                           class="absolute inset-0 focus:outline-hidden"
                           data-headlessui-state=""
-                          href="/ticket-details"
+                          href="/vehicles"
                         ></a>
-                        Sprinter, 2019
+                        VW Golf, 2009
                       </td>
                       <td class="text-zinc-500 relative px-4 first:pl-(--gutter,--spacing(2)) last:pr-(--gutter,--spacing(2)) border-b border-zinc-950/5 dark:border-white/5 py-4 sm:first:pl-1 sm:last:pr-1">
                         <a
@@ -180,9 +184,9 @@ export default function Page() {
                           tabindex="-1"
                           class="absolute inset-0 focus:outline-hidden"
                           data-headlessui-state=""
-                          href="/ticket-details"
+                          href="/vehicles"
                         ></a>
-                        BA14 NAD
+                        X181 PAJ
                       </td>
                       <td class="text-zinc-500 relative px-4 first:pl-(--gutter,--spacing(2)) last:pr-(--gutter,--spacing(2)) border-b border-zinc-950/5 dark:border-white/5 py-4 sm:first:pl-1 sm:last:pr-1">
                         <a
@@ -191,7 +195,7 @@ export default function Page() {
                           tabindex="-1"
                           class="absolute inset-0 focus:outline-hidden"
                           data-headlessui-state=""
-                          href="/ticket-details"
+                          href="/vehicles"
                         ></a>
                         May 9, 2024
                       </td>
@@ -203,12 +207,12 @@ export default function Page() {
                           tabindex="-1"
                           class="absolute inset-0 focus:outline-hidden"
                           data-headlessui-state=""
-                          href="/ticket-details"
+                          href="/vehicles"
                         ></a>
                         <div class="flex items-center gap-2">
                           <span
                             data-slot="avatar"
-                            class="size-6 inline-grid shrink-0 align-middle [--avatar-radius:20%] [--ring-opacity:20%] *:col-start-1 *:row-start-1 outline -outline-offset-1 outline-black/(--ring-opacity) dark:outline-white/(--ring-opacity) rounded-full *:rounded-full"
+                            class="size-8 inline-grid shrink-0 align-middle [--avatar-radius:20%] [--ring-opacity:20%] *:col-start-1 *:row-start-1 outline -outline-offset-1 outline-black/(--ring-opacity) dark:outline-white/(--ring-opacity) rounded-full *:rounded-full"
                           >
                             <img class="size-full" src="/joff.png" alt=""></img>
                           </span>
@@ -222,7 +226,88 @@ export default function Page() {
                           tabindex="-1"
                           class="absolute inset-0 focus:outline-hidden"
                           data-headlessui-state=""
-                          href="/ticket-details"
+                          href="/vehicles"
+                        ></a>
+                        £200.00
+                      </td>
+                    </tr>
+
+                    <tr class="has-[[data-row-link][data-focus]]:outline-2 has-[[data-row-link][data-focus]]:-outline-offset-2 has-[[data-row-link][data-focus]]:outline-blue-500 dark:focus-within:bg-white/[2.5%] hover:bg-zinc-950/[2.5%] dark:hover:bg-white/[2.5%]">
+                      <td class="relative px-4 first:pl-(--gutter,--spacing(2)) last:pr-(--gutter,--spacing(2)) border-b border-zinc-950/5 dark:border-white/5 py-4 sm:first:pl-1 sm:last:pr-1">
+                        <div class="flex items-center gap-2">
+                          <span
+                            data-slot="avatar"
+                            class="size-8 inline-grid shrink-0 align-middle [--avatar-radius:20%] [--ring-opacity:20%] *:col-start-1 *:row-start-1 outline -outline-offset-1 outline-black/(--ring-opacity) dark:outline-white/(--ring-opacity) rounded-full *:rounded-full"
+                          >
+                            <img class="size-full" src="/vw.png" alt=""></img>
+                          </span>
+                        </div>
+                      </td>
+                      <td class="text-zinc-500 relative px-4 first:pl-(--gutter,--spacing(2)) last:pr-(--gutter,--spacing(2)) border-b border-zinc-950/5 dark:border-white/5 py-4 sm:first:pl-1 sm:last:pr-1">
+                        <a
+                          data-row-link="true"
+                          aria-label="Order #3000"
+                          tabindex="-1"
+                          class="absolute inset-0 focus:outline-hidden"
+                          data-headlessui-state=""
+                          href="/vehicles"
+                        ></a>
+                        Sprinter, 2019
+                      </td>
+                      <td class="text-zinc-500 relative px-4 first:pl-(--gutter,--spacing(2)) last:pr-(--gutter,--spacing(2)) border-b border-zinc-950/5 dark:border-white/5 py-4 sm:first:pl-1 sm:last:pr-1">
+                        <a
+                          data-row-link="true"
+                          aria-label="Order #3000"
+                          tabindex="-1"
+                          class="absolute inset-0 focus:outline-hidden"
+                          data-headlessui-state=""
+                          href="/vehicles"
+                        ></a>
+                        BA14 NAD
+                      </td>
+                      <td class="text-zinc-500 relative px-4 first:pl-(--gutter,--spacing(2)) last:pr-(--gutter,--spacing(2)) border-b border-zinc-950/5 dark:border-white/5 py-4 sm:first:pl-1 sm:last:pr-1">
+                        <a
+                          data-row-link="true"
+                          aria-label="Order #3000"
+                          tabindex="-1"
+                          class="absolute inset-0 focus:outline-hidden"
+                          data-headlessui-state=""
+                          href="/vehicles"
+                        ></a>
+                        Jun 10, 2024
+                      </td>
+
+                      <td class="relative px-4 first:pl-(--gutter,--spacing(2)) last:pr-(--gutter,--spacing(2)) border-b border-zinc-950/5 dark:border-white/5 py-4 sm:first:pl-1 sm:last:pr-1">
+                        <a
+                          data-row-link="true"
+                          aria-label="Order #3000"
+                          tabindex="-1"
+                          class="absolute inset-0 focus:outline-hidden"
+                          data-headlessui-state=""
+                          href="/vehicles"
+                        ></a>
+                        <div class="flex items-center gap-2">
+                          <span
+                            data-slot="avatar"
+                            class="size-8 inline-grid shrink-0 align-middle [--avatar-radius:20%] [--ring-opacity:20%] *:col-start-1 *:row-start-1 outline -outline-offset-1 outline-black/(--ring-opacity) dark:outline-white/(--ring-opacity) rounded-full *:rounded-full"
+                          >
+                            <img
+                              class="size-full"
+                              src="/chris.png"
+                              alt=""
+                            ></img>
+                          </span>
+                          <span>Chris Black</span>
+                        </div>
+                      </td>
+                      <td class="text-right relative px-4 first:pl-(--gutter,--spacing(2)) last:pr-(--gutter,--spacing(2)) border-b border-zinc-950/5 dark:border-white/5 py-4 sm:first:pl-1 sm:last:pr-1">
+                        <a
+                          data-row-link="true"
+                          aria-label="Order #3000"
+                          tabindex="-1"
+                          class="absolute inset-0 focus:outline-hidden"
+                          data-headlessui-state=""
+                          href="/vehicles"
                         ></a>
                         £720.00
                       </td>

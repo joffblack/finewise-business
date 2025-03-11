@@ -1,3 +1,4 @@
+"use client";
 import { Sidebar } from "../../components/sidebar";
 import { SidebarLayout } from "../../components/sidebar-layout";
 import FWsidebarFooter from "../components/FWsidebarFooter";
@@ -16,7 +17,7 @@ export default function Page() {
       }
     >
       <div className="flex items-end justify-between">
-        <h2 className="text-base/7 font-semibold text-zinc-950 sm:text-sm/6 dark:text-white">
+        <h2 className="text-2xl/8 font-semibold text-zinc-950 sm:text-xl/8 dark:text-white">
           Drivers
         </h2>
       </div>
@@ -143,9 +144,9 @@ export default function Page() {
                         <div class="flex items-center gap-2">
                           <span
                             data-slot="avatar"
-                            class="size-6 inline-grid shrink-0 align-middle [--avatar-radius:20%] [--ring-opacity:20%] *:col-start-1 *:row-start-1 outline -outline-offset-1 outline-black/(--ring-opacity) dark:outline-white/(--ring-opacity) rounded-full *:rounded-full"
+                            class="size-8 inline-grid shrink-0 align-middle [--avatar-radius:20%] [--ring-opacity:20%] *:col-start-1 *:row-start-1 outline -outline-offset-1 outline-black/(--ring-opacity) dark:outline-white/(--ring-opacity) rounded-full *:rounded-full"
                           >
-                            <img class="size-full" src="/joff.png" alt=""></img>
+                            <img class="size-full" src="/chris.png" alt=""></img>
                           </span>
                         </div>
                       </td>
@@ -156,7 +157,7 @@ export default function Page() {
                           tabindex="-1"
                           class="absolute inset-0 focus:outline-hidden"
                           data-headlessui-state=""
-                          href="/ticket-details"
+                          href="/drivers"
                         ></a>
                         Christopher
                       </td>
@@ -167,7 +168,7 @@ export default function Page() {
                           tabindex="-1"
                           class="absolute inset-0 focus:outline-hidden"
                           data-headlessui-state=""
-                          href="/ticket-details"
+                          href="/drivers"
                         ></a>
                         Black
                       </td>
@@ -178,7 +179,7 @@ export default function Page() {
                           tabindex="-1"
                           class="absolute inset-0 focus:outline-hidden"
                           data-headlessui-state=""
-                          href="/ticket-details"
+                          href="/drivers"
                         ></a>
                         Jun 18, 2024
                       </td>
@@ -190,7 +191,7 @@ export default function Page() {
                           tabindex="-1"
                           class="absolute inset-0 focus:outline-hidden"
                           data-headlessui-state=""
-                          href="/ticket-details"
+                          href="/drivers"
                         ></a>
                         BLACK1025831234
                       </td>
@@ -202,7 +203,7 @@ export default function Page() {
                           tabindex="-1"
                           class="absolute inset-0 focus:outline-hidden"
                           data-headlessui-state=""
-                          href="/ticket-details"
+                          href="/drivers"
                         ></a>
                         £150.00
                       </td>
@@ -212,7 +213,7 @@ export default function Page() {
                         <div class="flex items-center gap-2">
                           <span
                             data-slot="avatar"
-                            class="size-6 inline-grid shrink-0 align-middle [--avatar-radius:20%] [--ring-opacity:20%] *:col-start-1 *:row-start-1 outline -outline-offset-1 outline-black/(--ring-opacity) dark:outline-white/(--ring-opacity) rounded-full *:rounded-full"
+                            class="size-8 inline-grid shrink-0 align-middle [--avatar-radius:20%] [--ring-opacity:20%] *:col-start-1 *:row-start-1 outline -outline-offset-1 outline-black/(--ring-opacity) dark:outline-white/(--ring-opacity) rounded-full *:rounded-full"
                           >
                             <img class="size-full" src="/joff.png" alt=""></img>
                           </span>
@@ -225,7 +226,7 @@ export default function Page() {
                           tabindex="-1"
                           class="absolute inset-0 focus:outline-hidden"
                           data-headlessui-state=""
-                          href="/ticket-details"
+                          href="/drivers"
                         ></a>
                         Jonathan
                       </td>
@@ -236,7 +237,7 @@ export default function Page() {
                           tabindex="-1"
                           class="absolute inset-0 focus:outline-hidden"
                           data-headlessui-state=""
-                          href="/ticket-details"
+                          href="/drivers"
                         ></a>
                         Black
                       </td>
@@ -247,7 +248,7 @@ export default function Page() {
                           tabindex="-1"
                           class="absolute inset-0 focus:outline-hidden"
                           data-headlessui-state=""
-                          href="/ticket-details"
+                          href="/drivers"
                         ></a>
                         May 9, 2024
                       </td>
@@ -259,7 +260,7 @@ export default function Page() {
                           tabindex="-1"
                           class="absolute inset-0 focus:outline-hidden"
                           data-headlessui-state=""
-                          href="/ticket-details"
+                          href="/drivers"
                         ></a>
                         BLACK082588ABCD
                       </td>
@@ -271,7 +272,7 @@ export default function Page() {
                           tabindex="-1"
                           class="absolute inset-0 focus:outline-hidden"
                           data-headlessui-state=""
-                          href="/ticket-details"
+                          href="/drivers"
                         ></a>
                         £720.00
                       </td>
