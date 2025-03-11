@@ -409,14 +409,14 @@ export default function Home() {
       <div className="flex flex-row mt-10">
         <div className="w-[50%] p-8">
           <div id="chart">
-            {typeof window !== "undefined" && (
+            {/* {typeof window !== "undefined" && ( */}
               <ReactApexChart
                 options={bar.options}
                 series={bar.series}
                 type="bar"
                 height={350}
               />
-            )}
+            {/* )} */}
           </div>
           <div id="html-dist"></div>
         </div>
