@@ -1,5 +1,5 @@
 "use client";
-import { Sidebar } from "../components/sidebar";
+// import { Sidebar } from "../components/sidebar";
 import { SidebarLayout } from "../components/sidebar-layout";
 import FWsidebarFooter from "./components/FWsidebarFooter";
 import FWsidebarBody from "./components/FWsidebarBody";
@@ -162,15 +162,17 @@ export default function Home() {
   // });
 
   return (
-    <SidebarLayout
-      sidebar={
-        <Sidebar>
-          <FWsidebarHeader />
-          <FWsidebarBody />
-          <FWsidebarFooter />
-        </Sidebar>
-      }
-    >
+    // <SidebarLayout
+    //   sidebar={
+    //     <Sidebar>
+    //       <FWsidebarHeader />
+    //       <FWsidebarBody />
+    //       <FWsidebarFooter />
+    //     </Sidebar>
+    //   }
+    // >
+
+    <>
     
 
       <div className="flex items-end justify-between">
@@ -281,158 +283,7 @@ export default function Home() {
         </div>
       </div>
 
-      {/* <div class="mt-4 grid gap-8 sm:grid-cols-2 xl:grid-cols-4">
-        <div>
-          <hr
-            role="presentation"
-            class="w-full border-t border-zinc-950/10 dark:border-white/10"
-          ></hr>
-          <div class="mt-6 text-lg/6 font-medium sm:text-sm/6">
-            Top ticketed drivers
-          </div>
-          <div class="mt-3 text-sm/6 sm:text-xs/6">
-            <span class="w-60 text-zinc-500">Chris Black</span>
-            <span class="ml-4 inline-flex items-center gap-x-1.5 rounded-md px-1.5 py-0.5 text-sm/5 font-medium sm:text-xs/5 forced-colors:outline bg-red-400/20 text-red-700 group-data-hover:bg-lime-400/30 dark:bg-red-400/10 dark:text-red-300 dark:group-data-hover:bg-red-400/15">
-              12
-            </span>
-          </div>
-          <div class="mt-3 text-sm/6 sm:text-xs/6">
-            <span class="text-zinc-500">Bea Shergill</span>
-            <span class="ml-3 inline-flex items-center gap-x-1.5 rounded-md px-1.5 py-0.5 text-sm/5 font-medium sm:text-xs/5 forced-colors:outline bg-red-400/20 text-red-700 group-data-hover:bg-lime-400/30 dark:bg-red-400/10 dark:text-red-300 dark:group-data-hover:bg-red-400/15">
-              10
-            </span>
-          </div>
-          <div class="mt-3 text-sm/6 sm:text-xs/6">
-            <span class="text-zinc-500">Matt Navin</span>
-            <span class="ml-5 inline-flex items-center gap-x-1.5 rounded-md px-1.5 py-0.5 text-sm/5 font-medium sm:text-xs/5 forced-colors:outline bg-amber-400/20 text-amber-700 group-data-hover:bg-lime-400/30 dark:bg-red-400/10 dark:text-amber-300 dark:group-data-hover:bg-amber-400/15">
-              8
-            </span>
-          </div>
-          <div class="mt-3 text-sm/6 sm:text-xs/6">
-            <span class="text-zinc-500">Joff Black</span>
-            <span class="ml-6 inline-flex items-center gap-x-1.5 rounded-md px-1.5 py-0.5 text-sm/5 font-medium sm:text-xs/5 forced-colors:outline bg-green-400/20 text-green-700 group-data-hover:bg-lime-400/30 dark:bg-green-400/10 dark:text-green-300 dark:group-data-hover:bg-green-400/15">
-              0
-            </span>
-          </div>
-        </div>
-        <div>
-          <hr
-            role="presentation"
-            class="w-full border-t border-zinc-950/10 dark:border-white/10"
-          ></hr>
-          <div class="mt-6 text-lg/6 font-medium sm:text-sm/6">
-            Top ticketed vehicles
-          </div>
-          <div class="mt-3 text-sm/6 sm:text-xs/6">
-            <span class="w-60 text-zinc-500">NA24 BAD</span>
-            <span class="ml-3 inline-flex items-center gap-x-1.5 rounded-md px-1.5 py-0.5 text-sm/5 font-medium sm:text-xs/5 forced-colors:outline bg-red-400/20 text-red-700 group-data-hover:bg-lime-400/30 dark:bg-red-400/10 dark:text-red-300 dark:group-data-hover:bg-red-400/15">
-              7
-            </span>
-          </div>
-          <div class="mt-3 text-sm/6 sm:text-xs/6">
-            <span class="text-zinc-500">NA24 MAD</span>
-            <span class="ml-3 inline-flex items-center gap-x-1.5 rounded-md px-1.5 py-0.5 text-sm/5 font-medium sm:text-xs/5 forced-colors:outline bg-red-400/20 text-red-700 group-data-hover:bg-lime-400/30 dark:bg-red-400/10 dark:text-red-300 dark:group-data-hover:bg-red-400/15">
-              7
-            </span>
-          </div>
-          <div class="mt-3 text-sm/6 sm:text-xs/6">
-            <span class="text-zinc-500">NA24 LAD</span>
-            <span class="ml-3 inline-flex items-center gap-x-1.5 rounded-md px-1.5 py-0.5 text-sm/5 font-medium sm:text-xs/5 forced-colors:outline bg-amber-400/20 text-amber-700 group-data-hover:bg-lime-400/30 dark:bg-red-400/10 dark:text-amber-300 dark:group-data-hover:bg-amber-400/15">
-              6
-            </span>
-          </div>
-          <div class="mt-3 text-sm/6 sm:text-xs/6">
-            <span class="text-zinc-500">NA24 SAD</span>
-            <span class="ml-3 inline-flex items-center gap-x-1.5 rounded-md px-1.5 py-0.5 text-sm/5 font-medium sm:text-xs/5 forced-colors:outline bg-green-400/20 text-green-700 group-data-hover:bg-lime-400/30 dark:bg-green-400/10 dark:text-green-300 dark:group-data-hover:bg-green-400/15">
-              2
-            </span>
-          </div>
-        </div>
-        <div>
-          <hr
-            role="presentation"
-            class="w-full border-t border-zinc-950/10 dark:border-white/10"
-          ></hr>
-          <div class="mt-6 text-lg/6 font-medium sm:text-sm/6">
-            Top ticket types
-          </div>
-          <div class="mt-3 text-sm/6 sm:text-xs/6">
-            <span class="w-60 text-zinc-500">Parking</span>
-            <span class="ml-4 inline-flex items-center gap-x-1.5 rounded-md px-1.5 py-0.5 text-sm/5 font-medium sm:text-xs/5 forced-colors:outline bg-red-400/20 text-red-700 group-data-hover:bg-lime-400/30 dark:bg-red-400/10 dark:text-red-300 dark:group-data-hover:bg-red-400/15">
-              8
-            </span>
-          </div>
-          <div class="mt-3 text-sm/6 sm:text-xs/6">
-            <span class="text-zinc-500">Congestion</span>
-            <span class="ml-3 inline-flex items-center gap-x-1.5 rounded-md px-1.5 py-0.5 text-sm/5 font-medium sm:text-xs/5 forced-colors:outline bg-red-400/20 text-red-700 group-data-hover:bg-lime-400/30 dark:bg-red-400/10 dark:text-red-300 dark:group-data-hover:bg-red-400/15">
-              5
-            </span>
-          </div>
-          <div class="mt-3 text-sm/6 sm:text-xs/6">
-            <span class="text-zinc-500">Bus Lane</span>
-            <span class="ml-5 inline-flex items-center gap-x-1.5 rounded-md px-1.5 py-0.5 text-sm/5 font-medium sm:text-xs/5 forced-colors:outline bg-amber-400/20 text-amber-700 group-data-hover:bg-lime-400/30 dark:bg-red-400/10 dark:text-amber-300 dark:group-data-hover:bg-amber-400/15">
-              8
-            </span>
-          </div>
-        </div>
-        <div>
-          <hr
-            role="presentation"
-            class="w-full border-t border-zinc-950/10 dark:border-white/10"
-          ></hr>
-          <div class="mt-6 text-lg/6 font-medium sm:text-sm/6">
-            Ticket statuses
-          </div>
-          <div class="mt-3 text-sm/6 sm:text-xs/6">
-            <span class="w-60 text-zinc-500">Settled</span>
-            <span class="ml-4 inline-flex items-center gap-x-1.5 rounded-md px-1.5 py-0.5 text-sm/5 font-medium sm:text-xs/5 forced-colors:outline bg-red-400/20 text-red-700 group-data-hover:bg-lime-400/30 dark:bg-red-400/10 dark:text-red-300 dark:group-data-hover:bg-red-400/15">
-              18
-            </span>
-          </div>
-          <div class="mt-3 text-sm/6 sm:text-xs/6">
-            <span class="text-zinc-500">Appealled</span>
-            <span class="ml-3 inline-flex items-center gap-x-1.5 rounded-md px-1.5 py-0.5 text-sm/5 font-medium sm:text-xs/5 forced-colors:outline bg-red-400/20 text-red-700 group-data-hover:bg-lime-400/30 dark:bg-red-400/10 dark:text-red-300 dark:group-data-hover:bg-red-400/15">
-              11
-            </span>
-          </div>
-          <div class="mt-3 text-sm/6 sm:text-xs/6">
-            <span class="text-zinc-500">Rejected</span>
-            <span class="ml-5 inline-flex items-center gap-x-1.5 rounded-md px-1.5 py-0.5 text-sm/5 font-medium sm:text-xs/5 forced-colors:outline bg-amber-400/20 text-amber-700 group-data-hover:bg-lime-400/30 dark:bg-red-400/10 dark:text-amber-300 dark:group-data-hover:bg-amber-400/15">
-              3
-            </span>
-          </div>
-        </div>
-      </div> */}
+      </>
 
-
-
-      {/* <div className="flex flex-row mt-10">
-        <div className="w-[50%] p-8">
-          <div id="chart">
-            <ReactApexChart
-              options={bar.options}
-              series={bar.series}
-              type="bar"
-              height={350}
-            />
-          </div>
-          <div id="html-dist"></div>
-        </div>
-
-        <div className="w-[50%] p-8 ml-[5%]">
-          <div>
-            <div id="chart">
-              <ReactApexChart
-                options={tree.options}
-                series={tree.series}
-                type="treemap"
-                height={300}
-              />
-            </div>
-            <div id="html-dist"></div>
-          </div>
-        </div>
-      </div> */}
-    </SidebarLayout>
   );
 }
