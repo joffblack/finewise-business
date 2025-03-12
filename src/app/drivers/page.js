@@ -383,7 +383,7 @@ export default function Page() {
                                   htmlFor="max"
                                   className="block text-sm font-medium leading-6 text-gray-900 sm:pt-1.5"
                                 >
-                                  License Number
+                                  License Number*
                                 </label>
                               </td>
                               <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500 leading-6">

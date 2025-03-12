@@ -25,7 +25,7 @@ export default function Home() {
             class="flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white"
           >
             <img
-              class="w-24 h-20 mr-2"
+              class="w-20 h-16 mr-2"
               src={"/finewise-logo-dark.png"}
               alt="logo"
             ></img>
