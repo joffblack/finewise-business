@@ -36,7 +36,7 @@ export default function FWsidebarFooter() {
           <ChevronUpIcon />
         </DropdownButton>
         <DropdownMenu className="min-w-64" anchor="top start">
-          <DropdownItem href="/">
+          <DropdownItem href="/change-password">
             <Cog8ToothIcon />
             <DropdownLabel>Change Password</DropdownLabel>
           </DropdownItem>

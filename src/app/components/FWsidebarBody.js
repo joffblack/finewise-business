@@ -22,10 +22,10 @@ export default function FWsidebarBody() {
   return (
     <SidebarBody>
       <SidebarSection>
-        <SidebarItem href="/">
+        <SidebarItem href="/dashboard">
           <HomeIcon />
           <SidebarLabel>
-            <Link href="/">Dashboard</Link>
+            <Link href="/dashboard">Dashboard</Link>
           </SidebarLabel>
         </SidebarItem>
 
