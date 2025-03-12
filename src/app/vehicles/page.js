@@ -370,7 +370,12 @@ export default function Page() {
                             ></button>
                           </div> */}
                         </div>
+
+                        <div className="text-xs w-full text-center">Enter the vehicle registration to bring up the full details from the DVLA</div>
+
                         <table className="min-w-full divide-y divide-gray-300 mt-2">
+
+
                           <tbody className="divide-gray-200">
                             <tr>
                               <td className="w-1/3">
@@ -452,7 +457,7 @@ export default function Page() {
                                       htmlFor="model"
                                       className="block text-sm font-medium leading-6 text-gray-900 sm:pt-1.5"
                                     >
-                                      Associated Driver
+                                      Associated Driver*
                                     </label>
                                   </td>
                                   <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500 leading-6">
