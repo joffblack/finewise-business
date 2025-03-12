@@ -25,21 +25,21 @@ export default function FWsidebarBody() {
         <SidebarItem href="/dashboard">
           <HomeIcon />
           <SidebarLabel>
-            <Link href="/dashboard">Dashboard</Link>
+            <Link href="/dashboard" >Dashboard</Link>
           </SidebarLabel>
         </SidebarItem>
 
         <SidebarItem href="/tickets">
           <TicketIcon />
           <SidebarLabel>
-            <Link href="/tickets">Tickets</Link>
+            <Link href="/tickets" >Tickets</Link>
           </SidebarLabel>
         </SidebarItem>
 
         <SidebarItem href="/vehicles">
           <Square2StackIcon />
           <SidebarLabel>
-            <Link href="/vehicles">Vehicles</Link>
+            <Link href="/vehicles" >Vehicles</Link>
           </SidebarLabel>
         </SidebarItem>
 
@@ -51,11 +51,11 @@ export default function FWsidebarBody() {
         </SidebarItem>
       </SidebarSection>
       <SidebarSection className="max-lg:hidden">
-        <SidebarHeading>Latest News</SidebarHeading>
-        <SidebarItem href="/latest-news">Bromley borough added</SidebarItem>
-        <SidebarItem href="/latest-news">New FineWise message</SidebarItem>
-        <SidebarItem href="/latest-news">Greenwich borough added</SidebarItem>
-        <SidebarItem href="/latest-news">Appeal #302 accepted</SidebarItem>
+        <SidebarHeading >Latest News</SidebarHeading>
+        <SidebarItem href="/latest-news" >Bromley borough added</SidebarItem>
+        <SidebarItem href="/latest-news" >New FineWise message</SidebarItem>
+        <SidebarItem href="/latest-news" >Greenwich borough added</SidebarItem>
+        <SidebarItem href="/latest-news" >Appeal #302 accepted</SidebarItem>
         {/* <SidebarItem href="/events/4">Important message</SidebarItem> */}
       </SidebarSection>
       <SidebarSpacer />
@@ -69,11 +69,11 @@ export default function FWsidebarBody() {
 
         <SidebarItem href="/support">
           <QuestionMarkCircleIcon />
-          <SidebarLabel>Support</SidebarLabel>
+          <SidebarLabel >Support</SidebarLabel>
         </SidebarItem>
         <SidebarItem href="/whats-changed">
           <SparklesIcon />
-          <SidebarLabel>What&apos;s Changed</SidebarLabel>
+          <SidebarLabel >What&apos;s Changed</SidebarLabel>
         </SidebarItem>
       </SidebarSection>
     </SidebarBody>
