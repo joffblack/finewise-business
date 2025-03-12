@@ -32,7 +32,7 @@ function FWsidebarHeader() {
             width="24"
             height="24"
           />
-          <SidebarLabel >FineWise</SidebarLabel>
+          <SidebarLabel className="xl:text-white lg:text-white  @media (width <= 48rem) { text-black }">FineWise</SidebarLabel>
         </DropdownButton>
       </Dropdown>
     </SidebarHeader>
