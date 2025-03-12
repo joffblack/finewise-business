@@ -52,10 +52,10 @@ export default function FWsidebarBody() {
       </SidebarSection>
       <SidebarSection className="max-lg:hidden">
         <SidebarHeading >Latest News</SidebarHeading>
-        <SidebarItem href="/latest-news" className="xl:text-white lg:text-white  @media (width <= 48rem) { text-black }">Bromley borough added</SidebarItem>
-        <SidebarItem href="/latest-news" className="xl:text-white lg:text-white  @media (width <= 48rem) { text-black }">New FineWise message</SidebarItem>
-        <SidebarItem href="/latest-news" className="xl:text-white lg:text-white  @media (width <= 48rem) { text-black }">Greenwich borough added</SidebarItem>
-        <SidebarItem href="/latest-news" className="xl:text-white lg:text-white  @media (width <= 48rem) { text-black }">Appeal #302 accepted</SidebarItem>
+        <SidebarItem href="/latest-news-bromley" className="xl:text-white lg:text-white  @media (width <= 48rem) { text-black }">Bromley borough added</SidebarItem>
+        <SidebarItem href="/latest-news-finewise" className="xl:text-white lg:text-white  @media (width <= 48rem) { text-black }">New FineWise message</SidebarItem>
+        <SidebarItem href="/latest-news-greenwich" className="xl:text-white lg:text-white  @media (width <= 48rem) { text-black }">Greenwich borough added</SidebarItem>
+        <SidebarItem href="/latest-news-appeal" className="xl:text-white lg:text-white  @media (width <= 48rem) { text-black }">Appeal #302 accepted</SidebarItem>
         {/* <SidebarItem href="/events/4">Important message</SidebarItem> */}
       </SidebarSection>
       <SidebarSpacer />

@@ -44,7 +44,7 @@ export default function Page() {
           <div class="mt-4 lg:mt-8">
             <div class="flex items-center gap-4">
               <h1 class="text-2xl/8 font-semibold text-zinc-950 sm:text-xl/8 dark:text-white">
-                Ticket 3000
+                Ticket BS12345678
               </h1>
               <span class="inline-flex items-center gap-x-1.5 rounded-md px-1.5 py-0.5 text-sm/5 font-medium sm:text-xs/5 forced-colors:outline bg-lime-400/20 text-lime-700 group-data-hover:bg-lime-400/30 dark:bg-lime-400/10 dark:text-lime-300 dark:group-data-hover:bg-lime-400/15">
                 Paid
