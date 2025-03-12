@@ -5,12 +5,13 @@ import FWsidebarFooter from "../components/FWsidebarFooter";
 import FWsidebarBody from "../components/FWsidebarBody";
 import FWsidebarHeader from "../components/FWsidebarHeader";
 import Link from "next/link";
-import { React, Fragment, useState, useEffect } from "react";
-import { Dialog, Transition } from "@headlessui/react";
+import { React, Fragment, useState } from "react";
+import { Button, Dialog, Transition } from "@headlessui/react";
 
 export default function Page() {
+  let [open, setOpen] = useState(false);
 
-  const [open, setOpen] = useState(false);
+  let [registration, setRegistration] = useState("");
 
   return (
     <SidebarLayout
@@ -118,14 +119,13 @@ export default function Page() {
 
         {/* <Link href="vehicle-add"> */}
         <button
-          class="relative isolate inline-flex items-baseline justify-center gap-x-2 rounded-lg border text-base/6 font-semibold px-[calc(--spacing(3.5)-1px)] py-[calc(--spacing(2.5)-1px)] sm:px-[calc(--spacing(3)-1px)] sm:py-[calc(--spacing(1.5)-1px)] sm:text-sm/6 focus:outline-hidden data-focus:outline data-focus:outline-2 data-focus:outline-offset-2 data-focus:outline-blue-500 data-disabled:opacity-50 *:data-[slot=icon]:-mx-0.5 *:data-[slot=icon]:my-0.5 *:data-[slot=icon]:size-5 *:data-[slot=icon]:shrink-0 *:data-[slot=icon]:self-center *:data-[slot=icon]:text-(--btn-icon) sm:*:data-[slot=icon]:my-1 sm:*:data-[slot=icon]:size-4 forced-colors:[--btn-icon:ButtonText] forced-colors:data-hover:[--btn-icon:ButtonText] border-transparent bg-(--btn-border) dark:bg-(--btn-bg) before:absolute before:inset-0 before:-z-10 before:rounded-[calc(var(--radius-lg)-1px)] before:bg-(--btn-bg) before:shadow-sm dark:before:hidden dark:border-white/5 after:absolute after:inset-0 after:-z-10 after:rounded-[calc(var(--radius-lg)-1px)] after:shadow-[shadow:inset_0_1px_--theme(--color-white/15%)] data-active:after:bg-(--btn-hover-overlay) data-hover:after:bg-(--btn-hover-overlay) dark:after:-inset-px dark:after:rounded-lg data-disabled:before:shadow-none data-disabled:after:shadow-none text-white [--btn-bg:var(--color-zinc-900)] [--btn-border:var(--color-zinc-950)]/90 [--btn-hover-overlay:var(--color-white)]/10 dark:text-white dark:[--btn-bg:var(--color-zinc-600)] dark:[--btn-hover-overlay:var(--color-white)]/5 [--btn-icon:var(--color-zinc-400)] data-active:[--btn-icon:var(--color-zinc-300)] data-hover:[--btn-icon:var(--color-zinc-300)] cursor-default"
+          class="hover:bg-[#71717b] relative isolate inline-flex items-baseline justify-center gap-x-2 rounded-lg border text-base/6 font-semibold px-[calc(--spacing(3.5)-1px)] py-[calc(--spacing(2.5)-1px)] sm:px-[calc(--spacing(3)-1px)] sm:py-[calc(--spacing(1.5)-1px)] sm:text-sm/6 focus:outline-hidden data-focus:outline data-focus:outline-2 data-focus:outline-offset-2 data-focus:outline-blue-500 data-disabled:opacity-50 *:data-[slot=icon]:-mx-0.5 *:data-[slot=icon]:my-0.5 *:data-[slot=icon]:size-5 *:data-[slot=icon]:shrink-0 *:data-[slot=icon]:self-center *:data-[slot=icon]:text-(--btn-icon) sm:*:data-[slot=icon]:my-1 sm:*:data-[slot=icon]:size-4 forced-colors:[--btn-icon:ButtonText] forced-colors:data-hover:[--btn-icon:ButtonText] border-transparent bg-(--btn-border) dark:bg-(--btn-bg) before:absolute before:inset-0 before:-z-10 before:rounded-[calc(var(--radius-lg)-1px)] before:bg-(--btn-bg) before:shadow-sm dark:before:hidden dark:border-white/5 after:absolute after:inset-0 after:-z-10 after:rounded-[calc(var(--radius-lg)-1px)] after:shadow-[shadow:inset_0_1px_--theme(--color-white/15%)] data-active:after:bg-(--btn-hover-overlay) data-hover:after:bg-(--btn-hover-overlay) dark:after:-inset-px dark:after:rounded-lg data-disabled:before:shadow-none data-disabled:after:shadow-none text-white [--btn-bg:var(--color-zinc-900)] [--btn-border:var(--color-zinc-950)]/90 [--btn-hover-overlay:var(--color-white)]/10 dark:text-white dark:[--btn-bg:var(--color-zinc-600)] dark:[--btn-hover-overlay:var(--color-white)]/5 [--btn-icon:var(--color-zinc-400)] data-active:[--btn-icon:var(--color-zinc-300)] data-hover:[--btn-icon:var(--color-zinc-300)] cursor-default"
           type="button"
           onClick={() => setOpen(true)}
           data-headlessui-state=""
-
         >
           <span
-            class="absolute top-1/2 left-1/2 size-[max(100%,2.75rem)] -translate-x-1/2 -translate-y-1/2 [@media(pointer:fine)]:hidden"
+            class="bg-[#0F2128] absolute top-1/2 left-1/2 size-[max(100%,2.75rem)] -translate-x-1/2 -translate-y-1/2 [@media(pointer:fine)]:hidden"
             aria-hidden="true"
           ></span>
           Add vehicle
@@ -328,17 +328,17 @@ export default function Page() {
       </div>
 
       <Transition.Root show={open} as={Fragment}>
-        <Dialog as="div" className="relative z-40" onClose={setOpen}>
+        <Dialog as="div" className="relative z-10" onClose={setOpen}>
           <Transition.Child
             as={Fragment}
             enter="ease-in-out duration-1000"
-            enterFrom="opacity-10"
-            enterTo="opacity-20"
+            enterFrom="opacity-0"
+            enterTo="opacity-100"
             leave="ease-in-out duration-1000"
-            leaveFrom="opacity-20"
-            leaveTo="opacity-10"
+            leaveFrom="opacity-100"
+            leaveTo="opacity-0"
           >
-            <div className="fixed inset-0 bg-gray-500 bg-opacity-100 transition-opacity" />
+            <div className="fixed inset-0 bg-opacity-100" />
           </Transition.Child>
 
           <div className="fixed inset-0 overflow-hidden">
@@ -357,151 +357,121 @@ export default function Page() {
                     <div className="flex h-full flex-col overflow-y-scroll bg-white shadow-xl">
                       <div className="flex-1 overflow-y-auto px-4 py-6 sm:px-6">
                         <div className="flex items-center justify-between">
-                          <Dialog.Title className="text-lg font-medium text-gray-900"></Dialog.Title>
-                          <div className="ml-3 flex h-7 items-center">
+                          {/* <div className="ml-3 flex h-7 items-center">
                             <button
                               type="button"
                               className="-m-2 p-2 text-gray-400 hover:text-gray-500"
-                              onClick={() => setOpen(false)}
-                            ></button>
-                          </div>
-                        </div>
-                        <table className="min-w-full divide-y divide-gray-300 mt-10">
-                          <tbody className="divide-gray-200">
-                            {/* 
-                            <tr>
-                              <td>
-                                {" "}
-                                <label
-                                  htmlFor="productCategory1"
-                                  className="block text-sm font-medium leading-6 text-gray-900 sm:pt-1.5"
-                                >
-                                  Category 1
-                                </label>
-                              </td>
-                              <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
-                                <select
-                                  id="productCategory1"
-                                  name="productCategory1"
-                                  onChange={(e) =>
-                                    setProductCategory1(e.target.value)
-                                  }
-                                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:max-w-xs sm:text-sm sm:leading-6"
-                                >
-                                  <option></option>
-                                  {dataDropdownCategories1?.categories?.map(
-                                    (category) => (
-                                      <option
-                                        key={category.categoryID}
-                                        value={category.categoryID}
-                                      >
-                                        {category.categoryName}
-                                      </option>
-                                    )
-                                  )}
-                                </select>
-                              </td>
-                            </tr> */}
+                              onClick={() => 
+                              {
+                                setOpen(false)
+                                setRegistration("")
 
+                              }}
+                            ></button>
+                          </div> */}
+                        </div>
+                        <table className="min-w-full divide-y divide-gray-300 mt-2">
+                          <tbody className="divide-gray-200">
                             <tr>
-                              <td>
+                              <td className="w-1/3">
                                 {" "}
                                 <label
                                   htmlFor="max"
                                   className="block text-sm font-medium leading-6 text-gray-900 sm:pt-1.5"
                                 >
-                                  Max
+                                  Registration
                                 </label>
                               </td>
-                              <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
+                              <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500 leading-6">
                                 <input
                                   type="text"
                                   name="max"
                                   id="max"
                                   onChange={(e) => {
-                                    // setMax(e.target.value);
+                                    setRegistration(e.target.value);
                                   }}
-                                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                  className="block w-full rounded-md border-0 py-1.5 text-black-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 pl-2"
                                 />
                               </td>
                             </tr>
 
-                            <tr>
-                              <td>
+                            {registration.length > 6 ? (
+                              <>
+                                <tr>
+                                <td className="w-1/3">
                                 {" "}
-                                <label
-                                  htmlFor="productStatus"
-                                  className="block text-sm font-medium leading-6 text-gray-900 sm:pt-1.5"
-                                >
-                                  Status
-                                </label>
-                              </td>
+                                    <label
+                                      htmlFor="make"
+                                      className="block text-sm font-medium leading-6 text-gray-900 sm:pt-1.5"
+                                    >
+                                      Make
+                                    </label>
+                                  </td>
+                                  <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500 leading-6">
+                                    <input
+                                      type="text"
+                                      name="make"
+                                      id="make"
+                                      value="VW"
+                                      onChange={(e) => {
+                                        // setRegistration(e.target.value);
+                                      }}
+                                      className="block w-full rounded-md border-0 py-1.5 text-black-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 pl-2"
+                                    />
+                                  </td>
+                                </tr>
 
-                              <select
-                                id="productStatus"
-                                name="productStatus"
-                                onChange={
-                                  (e) => {}
-                                  // setProductStatus(e.target.value)
-                                }
-                                className="block w-[95%] ml-2 rounded-md border-0 py-1.5 text-gray-500 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:max-w-xs sm:text-sm sm:leading-6"
-                              >
-                                <option key={"zero"} value={""}>
-                                  {""}
-                                </option>
-
-                                <option key={"DISC"} value={"DISC"}>
-                                  {"DISC"}
-                                </option>
-                                <option key={"HOLD"} value={"HOLD"}>
-                                  {"HOLD"}
-                                </option>
-                              </select>
-                            </tr>
-
-                            <tr>
-                              <td>
+                                <tr>
+                                <td className="w-1/3">
                                 {" "}
-                                <label
-                                  htmlFor="image"
-                                  className="block text-sm font-medium leading-6 text-gray-900 sm:pt-1.5"
-                                >
-                                  Image
-                                </label>
-                              </td>
-                              <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
-                                <input
-                                  type="file"
-                                  name="image"
-                                  id="image"
-                                  onChange={(event) => {
-                                    // setProductImage(event.target.files[0]);
-                                  }}
-                                />
-                              </td>
-                            </tr>
+                                    <label
+                                      htmlFor="model"
+                                      className="block text-sm font-medium leading-6 text-gray-900 sm:pt-1.5"
+                                    >
+                                      Model
+                                    </label>
+                                  </td>
+                                  <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500 leading-6">
+                                    <input
+                                      type="text"
+                                      name="model"
+                                      id="model"
+                                      value="Golf"
+                                      onChange={(e) => {
+                                        // setRegistration(e.target.value);
+                                      }}
+                                      className="block w-full rounded-md border-0 py-1.5 text-black-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 pl-2"
+                                    />
+                                  </td>
+                                </tr>
 
-                            <tr>
-                              <td>
+                                <tr>
+                                <td className="w-1/3">
                                 {" "}
-                                <label
-                                  htmlFor="image2"
-                                  className="block text-sm font-medium leading-6 text-gray-900 sm:pt-1.5"
-                                >
-                                  Image 2
-                                </label>
-                              </td>
-                              <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
-                                <input
-                                  type="file"
-                                  name="image2"
-                                  id="image2"
-                                  onChange={(event) => {
-                                    // setProductImage2(event.target.files[0]);
-                                  }}
-                                />
-                              </td>
-                            </tr>
+                                    <label
+                                      htmlFor="model"
+                                      className="block text-sm font-medium leading-6 text-gray-900 sm:pt-1.5"
+                                    >
+                                      Associated Driver
+                                    </label>
+                                  </td>
+                                  <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500 leading-6">
+                                    <select
+                                      name="sort_by"
+                                      class="relative block w-full appearance-none rounded-lg py-[calc(--spacing(2.5)-1px)] sm:py-[calc(--spacing(1.5)-1px)] pr-[calc(--spacing(10)-1px)] pl-[calc(--spacing(3.5)-1px)] sm:pr-[calc(--spacing(9)-1px)] sm:pl-[calc(--spacing(3)-1px)] [&amp;_optgroup]:font-semibold text-base/6 text-zinc-950 placeholder:text-zinc-500 sm:text-sm/6 dark:text-white dark:*:text-white border border-zinc-950/10 data-hover:border-zinc-950/20 dark:border-white/10 dark:data-hover:border-white/20 bg-transparent dark:bg-white/5 dark:*:bg-zinc-800 focus:outline-hidden data-invalid:border-red-500 data-invalid:data-hover:border-red-500 dark:data-invalid:border-red-600 dark:data-invalid:data-hover:border-red-600 data-disabled:border-zinc-950/20 data-disabled:opacity-100 dark:data-disabled:border-white/15 dark:data-disabled:bg-white/[2.5%] dark:data-hover:data-disabled:border-white/15"
+                                      id="headlessui-select-:rir:"
+                                      data-headlessui-state=""
+                                    >
+                                      <option value=""></option>
+                                      <option value="name">Joff Black</option>
+                                      <option value="name">Chris Black</option>
+                                      <option value="name">Bea Shergill</option>
+                                      <option value="name">Matt Navin</option>
+                                    </select>
+                                  </td>
+                                </tr>
+                              </>
+                            ) : null}
                           </tbody>
                         </table>
                       </div>
@@ -511,13 +481,14 @@ export default function Page() {
                           <a
                             href="#"
                             onClick={async () => {
-                              console.log("clicked");
+                              setOpen(false);
+                              setRegistration("");
                             }}
-                            className="flex items-center justify-center rounded-md border border-transparent bg-green-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-green-700"
+                            className="flex items-center justify-center rounded-md border border-transparent bg-[#0F2128] px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-[#71717b]"
                           >
-                            Add Item
+                            Add Vehicle
                           </a>
-                        </div>
+                        </div>  
                       </div>
                     </div>
                   </Dialog.Panel>
